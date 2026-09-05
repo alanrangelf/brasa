@@ -1,473 +1,997 @@
 <!DOCTYPE html>
-<!-- saved from url=(0040)https://chat.z.ai/space/n1mhc725xj41-art -->
-<html lang="en-US" class="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		
-		<link rel="icon" type="image/png" sizes="512x512" href="https://z-cdn.chatglm.cn/z-ai/static/logo.svg">
-		<link rel="shortcut icon" href="https://z-cdn.chatglm.cn/z-ai/static/logo.svg">
-		<link rel="apple-touch-icon" sizes="512x512" href="https://z-cdn.chatglm.cn/z-ai/static/logo.svg">
-		<meta name="apple-mobile-web-app-title" content="Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.3-Flash">
-		
-		<meta name="keywords" content="GLM-4.6, GLM 4.6, GLM-4.6-Air, GLM 4.6 Air, GLM 4.5, GLM4.5, GLM4.6, Deep Research, z ai, z.ai, GLM 4.5 AI, GLM 4.6 AI, GLM AI, Chat Z, zai, Chat AI, GLM, z.ia, Chat Z AI, AI chat, chatbot, z.ai chat, free ai chat, free AI, free ai chat no login, GLM-4.5, GLM-4.5 chat, GLM-4.1V, GLM-4.5V, AI assistant chat, AI PPT, AI presentation, AI presentation maker, AI slides maker, AI slides, slide deck, pitch deck, AI deck generator, free pitch deck generator, AI PPT, AI PPT maker, AI for Google Slides, AI for PowerPoint, AI writer, AI writing assistant, AI code generator, full stack code generation, AI full stack developer, claude code, Roo Code, Cline, Kilo Code, OpenCode, Codex, Cursor, GLM Coding Plan, GLM Coding, AI Coding, code writer ai, magic design, magic design tool, AI inspiration board, visual brainstorming AI, chat with AI, AI对话, AI聊天, 聊天机器人, 免费AI聊天, AI做PPT, AI写作, AI编程, 全栈开发, 灵感画板, AI tool, AI helper, AI for students, AI for marketers, AI for content creation, ChatGPT, chatgpt free, Free ChatGPT, gpt chat, Gemini, Grok, Claude, Poe AI, YouChat, Jasper AI, deepseek, qwen, 豆包, 文心一言, AI搜问答, 写作灵感AI, 代码解释工具, PPT思路生成, 如何用AI做PPT, create pitch deck from brief, AI business plan presentation, marketing report slides, AI academic paper assistant, AI legal contract drafting, write social media calendar, AI email responder,  VS Code AI assistant, AI for Notion, AI for Figma, AI math problem solver from image, AI geoguessr solver, image to code generator, table extractor from image, chart data extractor, document analysis AI, image caption generator, visual Q&amp;A, 看图猜成语, AI拍照解题, 数学题解答, 物理题解答, GeoGuess AI, 图片转表格, 图片读数据, 看图问答, analyze video, summarize video content, generate video transcript, find object in image, what is in this picture, 视频分析, 视频内容摘要, 生成视频字幕, 图片里有什么, 识别图中物体, GLM-4.7, GLM 4.7, GLM4.7, skills, coding plan, GLM-5, GLM-5.0, GLM5, GLM 5, Pony, Pony Alpha, GLM-5.2, GLM 5.2, GLM5.2, long-horizon, long-running, ox alpha, Ox Alpha, Ox alpha, oxalpha, GLM-5.3-Flash, glm-5.3-flash, glm5.3flash, 5.3flash, 5.3 flash">
-
-		<!-- Google Tag Manager -->
-		<script async="" src="./index_files/clarity.js.download"></script><script type="text/javascript" async="" src="./index_files/clientParamBuilder.bundle.js.download"></script><script async="" src="./index_files/187234156"></script><script type="text/javascript" async="" src="./index_files/js"></script><script async="" src="./index_files/uwt.js.download"></script><script src="./index_files/1921933375117245" async=""></script><script type="text/javascript" async="" src="./index_files/fbevents.js.download"></script><script type="text/javascript" async="" src="./index_files/bat.js.download"></script><script type="text/javascript" async="" src="./index_files/js(1)"></script><script type="text/javascript" async="" src="./index_files/js(2)"></script><script type="text/javascript" async="" src="./index_files/pixel.js.download"></script><script async="" src="./index_files/gtm.js.download"></script><script>(function (w, d, s, l, i) {
-				w[l] = w[l] || []; w[l].push({
-					'gtm.start':
-						new Date().getTime(), event: 'gtm.js'
-				}); var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-						'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-			})(window, document, 'script', 'dataLayer', 'GTM-T9CBCLPX');
-		</script>
-		<!-- End Google Tag Manager -->
-
-		<link rel="manifest" href="https://z-cdn.chatglm.cn/z-ai/frontend/static/manifest.json">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
-		
-		<meta name="referrer" content="no-referrer">
-		<link rel="search" type="application/opensearchdescription+xml" title="Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.3-Flash" href="https://z-cdn.chatglm.cn/z-ai/frontend/static/opensearch.xml">
-		<script async="" src="./index_files/js(3)"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
-
-			gtag('config', 'G-Z8QTHYBHP3');
-		</script>
-
-		<script>
-			let metrics = {};
-			const observer = new PerformanceObserver((list) => {
-				const entries = list.getEntries();
-
-				entries.forEach((entry) => {
-					// 根据不同的entry类型处理不同的性能指标
-					switch (entry.entryType) {
-						case 'navigation':
-							{
-								const navEntry = entry;
-								metrics = {
-									...metrics,
-									dns: navEntry.domainLookupEnd - navEntry.domainLookupStart,
-									response: navEntry.responseEnd - navEntry.responseStart,
-									dom_parse: navEntry.domInteractive - navEntry.responseEnd,
-									dom_ready: navEntry.domContentLoadedEventEnd - navEntry.fetchStart,
-									resource: navEntry.domComplete - navEntry.domContentLoadedEventEnd,
-									first_interactive: navEntry.domInteractive - navEntry.fetchStart,
-									first_byte: navEntry.responseStart - navEntry.domainLookupStart,
-									loaded: navEntry.loadEventEnd - navEntry.fetchStart
-								};
-								sessionStorage.setItem('performance', JSON.stringify(metrics));
-								// 发送性能指标到阿里云日志服务
-							}
-							break;
-
-						case 'paint':
-							if (entry.name === 'first-paint') {
-								metrics = {
-									...metrics,
-									first_paint: entry.startTime
-								};
-								sessionStorage.setItem('performance', JSON.stringify(metrics));
-							}
-							if (entry.name === 'first-contentful-paint') {
-								metrics = {
-									...metrics,
-									first_contentful_paint: entry.startTime
-								};
-								sessionStorage.setItem('performance', JSON.stringify(metrics));
-							}
-							break;
-					}
-				});
-			});
-
-			// 观察的性能指标类型
-			observer.observe({
-				entryTypes: ['navigation', 'paint']
-			});
-		</script>
-
-		<script>
-			function resizeIframe(obj) {
-				obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-			}
-		</script>
-
-		<script>
-			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-			const initTheme = () => {
-				const metaThemeColorTag = document.querySelector('meta[name="theme-color"]');
-				// 取用户浏览器设置的主题
-				// const prefersTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-
-				const prefersTheme = 'light';
-
-				if (!localStorage?.theme) {
-					localStorage.theme = prefersTheme;
-				}
-
-				if (localStorage.theme === 'system') {
-					document.documentElement.classList.add(prefersTheme);
-					metaThemeColorTag.setAttribute(
-						'content',
-						prefersTheme === 'light' ? '#F4F6F8' : '#141618'
-					);
-				} else if (localStorage.theme === 'light') {
-					document.documentElement.classList.add('light');
-					metaThemeColorTag.setAttribute('content', '#F4F6F8');
-				} else {
-					document.documentElement.classList.add('dark');
-					metaThemeColorTag.setAttribute('content', '#141618');
-				}
-
-				// window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
-				// 	if (localStorage.theme === 'system') {
-				// 		if (e.matches) {
-				// 			document.documentElement.classList.add('dark');
-				// 			document.documentElement.classList.remove('light');
-				// 			metaThemeColorTag.setAttribute('content', '#141618');
-				// 		} else {
-				// 			document.documentElement.classList.add('light');
-				// 			document.documentElement.classList.remove('dark');
-				// 			metaThemeColorTag.setAttribute('content', '#F4F6F8');
-				// 		}
-				// 	}
-				// });
-			};
-			initTheme();
-		</script>
-
-		
-
-		<script>
-			// 炫酷的控制台介绍 - 根据语言显示
-			(function () {
-				// 检测用户语言偏好
-				const userLang = navigator.language || navigator.userLanguage;
-				const isChinese =
-					userLang.startsWith('zh') ||
-					userLang.includes('CN') ||
-					userLang.includes('TW') ||
-					userLang.includes('HK');
-
-				// 共同的 ASCII Logo
-				const logoLines = [
-					'%c███████╗     █████╗ ██╗',
-					'%c╚══███╔╝    ██╔══██╗██║',
-					'%c  ███╔╝     ███████║██║',
-					'%c ███╔╝      ██╔══██║██║',
-					'%c███████╗ ██╗██║  ██║██║',
-					'%c╚══════╝ ╚═╝╚═╝  ╚═╝╚═╝'
-				];
-				const logoColors = [
-					'color: #ff6b6b; font-family: monospace; font-size: 12px;',
-					'color: #4ecdc4; font-family: monospace; font-size: 12px;',
-					'color: #45b7d1; font-family: monospace; font-size: 12px;',
-					'color: #f9ca24; font-family: monospace; font-size: 12px;',
-					'color: #ff9ff3; font-family: monospace; font-size: 12px;',
-					'color: #6c5ce7; font-family: monospace; font-size: 12px;'
-				];
-
-				if (isChinese) {
-					// 中文版本
-					console.log(
-						'%c🚀 欢迎来到 Z.ai 🚀',
-						'color: #00d4ff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #00d4ff;'
-					);
-					logoLines.forEach((line, index) => console.log(line, logoColors[index]));
-					console.log('');
-					console.log(
-						'%c✨ 基于开源GLM模型的智能AI助手',
-						'color: #a29bfe; font-size: 14px; font-weight: bold;'
-					);
-					console.log('%c🧠 支持文本生成、推理和深度研究', 'color: #fd79a8; font-size: 12px;');
-					console.log('%c🌍 为中英文用户量身定制', 'color: #00b894; font-size: 12px;');
-					console.log('%c💡 免费开源的ChatGPT替代方案', 'color: #fdcb6e; font-size: 12px;');
-					console.log('');
-					console.log('%c---', 'color: #ddd;');
-					console.log(
-						'%c由 ❤️ 和大量 ☕ 驱动',
-						'color: #e84393; font-size: 11px; font-style: italic;'
-					);
-					console.log('');
-					console.log(
-						'%c🚀 加入我们！我们正在招聘优秀人才！',
-						'color: #00b894; font-size: 13px; font-weight: bold;'
-					);
-					console.log(
-						'%c💼 查看职位: https://zhipu-ai.jobs.feishu.cn/s/stmyTm5lxaU',
-						'color: #0984e3; font-size: 12px; text-decoration: underline;'
-					);
-				} else {
-					// 英文版本
-					console.log(
-						'%c🚀 Welcome to Z.ai 🚀',
-						'color: #00d4ff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #00d4ff;'
-					);
-					logoLines.forEach((line, index) => console.log(line, logoColors[index]));
-					console.log('');
-					console.log(
-						'%c✨ Advanced AI assistant powered by open-source GLM models',
-						'color: #a29bfe; font-size: 14px; font-weight: bold;'
-					);
-					console.log(
-						'%c🧠 Supports text generation, reasoning, and deep research',
-						'color: #fd79a8; font-size: 12px;'
-					);
-					console.log(
-						'%c🌍 Tailored for both English and Chinese users',
-						'color: #00b894; font-size: 12px;'
-					);
-					console.log(
-						'%c💡 Free and open-source ChatGPT alternative',
-						'color: #fdcb6e; font-size: 12px;'
-					);
-					console.log('');
-					console.log('%c---', 'color: #ddd;');
-					console.log(
-						'%cPowered by ❤️ and lots of ☕',
-						'color: #e84393; font-size: 11px; font-style: italic;'
-					);
-					console.log('');
-					console.log(
-						'%c🚀 Join us! We are hiring talented people!',
-						'color: #00b894; font-size: 13px; font-weight: bold;'
-					);
-					console.log(
-						'%c💼 View jobs: https://zhipu-ai.jobs.feishu.cn/s/stmyTm5lxaU',
-						'color: #0984e3; font-size: 12px; text-decoration: underline;'
-					);
-				}
-			})();
-		</script>
-
-		<script type="module" crossorigin="" src="./index_files/index-hicAZtW-.js.download"></script>
-		<link rel="stylesheet" crossorigin="" href="./index_files/index-CpprTwXp.css">
-	<title>Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.3-Flash</title><meta name="description" content="Amazing content sharing from Z.AI"><meta property="og:type" content="website"><meta property="og:site_name" content="Z.AI"><meta property="og:title" content="Z.AI Share"><meta property="og:description" content="Amazing content sharing from Z.AI"><meta property="og:image" content="https://z-cdn.chatglm.cn/z-ai/static/share-logo.png"><meta property="og:image:alt" content="Z.AI Share"><meta property="og:image:width" content="400"><meta property="og:image:height" content="400"><meta property="og:image:type" content="image/png"><meta property="og:url" content="http://chat.z.ai/space/n1mhc725xj41-art"><meta property="article:author" content="Z.AI"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Z.AI Share"><meta name="twitter:description" content="Amazing content sharing from Z.AI"><meta name="twitter:image" content="https://z-cdn.chatglm.cn/z-ai/static/share-logo.png"><meta name="twitter:image:alt" content="Z.AI Share"><meta name="robots" content="index,follow"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="application-name" content="Z.AI"><meta name="theme-color" content="#1976d2"><meta name="msapplication-TileColor" content="#1976d2"><link rel="canonical" href="http://chat.z.ai/space/n1mhc725xj41-art"><script src="./index_files/jweixin-1.6.0.js.download"></script>
-<script>
-(function() {
-  var frontendCallId = Math.random().toString(36).substring(2, 8);
-  console.log('[WeChat-Frontend-' + frontendCallId + '] ===== 开始前端微信JS-SDK初始化 =====');
-  console.log('[WeChat-Frontend-' + frontendCallId + '] 当前页面URL:', window.location.href);
-  console.log('[WeChat-Frontend-' + frontendCallId + '] 当前页面URL (去掉#):', window.location.href.split('#')[0]);
-  console.log('[WeChat-Frontend-' + frontendCallId + '] 签名配置:', {
-    debug: false,
-    appId: 'wxa5796e47c57570b1',
-    timestamp: 1788619466,
-    nonceStr: 'jwV8baooLfczzFbK',
-    signature: '64c823fbd1d3a16876335aed3147151914882e9f',
-    jsApiList: ["updateAppMessageShareData","updateTimelineShareData","onMenuShareAppMessage","onMenuShareTimeline"]
-  });
-
-  // 微信 JS-SDK 配置
-  wx.config({
-    debug: false, // 根据环境变量设置debug模式
-    appId: 'wxa5796e47c57570b1', // 公众号的唯一标识
-    timestamp: 1788619466, // 生成签名的时间戳
-    nonceStr: 'jwV8baooLfczzFbK', // 生成签名的随机串
-    signature: '64c823fbd1d3a16876335aed3147151914882e9f', // 签名
-    jsApiList: ["updateAppMessageShareData","updateTimelineShareData","onMenuShareAppMessage","onMenuShareTimeline"] // 需要使用的JS接口列表
-  });
-
-  console.log('[WeChat-Frontend-' + frontendCallId + '] wx.config() 调用完成');
-
-  // 微信 JS-SDK 就绪回调
-  wx.ready(function () {
-    console.log('[WeChat-Frontend-' + frontendCallId + '] WeChat JS-SDK ready - 微信JS-SDK就绪!');
-
-    // 分享给朋友的配置
-    console.log('[WeChat-Frontend-' + frontendCallId + '] 开始配置分享给朋友...');
-    wx.updateAppMessageShareData({
-      title: 'Z.AI Share',
-      desc: 'Amazing content sharing from Z.AI',
-      link: 'http://chat.z.ai/space/n1mhc725xj41-art',
-      imgUrl: 'https://z-cdn.chatglm.cn/z-ai/static/share-logo.png',
-      success: function () {
-        console.log('[WeChat-Frontend-' + frontendCallId + '] 分享给朋友成功');
-      },
-      cancel: function () {
-        console.log('[WeChat-Frontend-' + frontendCallId + '] 分享给朋友取消');
-      }
-    });
-
-    // 分享到朋友圈的配置
-    console.log('[WeChat-Frontend-' + frontendCallId + '] 开始配置分享到朋友圈...');
-    wx.updateTimelineShareData({
-      title: 'Z.AI Share',
-      link: 'http://chat.z.ai/space/n1mhc725xj41-art',
-      imgUrl: 'https://z-cdn.chatglm.cn/z-ai/static/share-logo.png',
-      success: function () {
-        console.log('[WeChat-Frontend-' + frontendCallId + '] 分享到朋友圈成功');
-      },
-      cancel: function () {
-        console.log('[WeChat-Frontend-' + frontendCallId + '] 分享到朋友圈取消');
-      }
-    });
-
-    // 兼容旧版本微信客户端
-    console.log('[WeChat-Frontend-' + frontendCallId + '] 开始配置兼容旧版本分享...');
-    wx.onMenuShareAppMessage({
-      title: 'Z.AI Share',
-      desc: 'Amazing content sharing from Z.AI',
-      link: 'http://chat.z.ai/space/n1mhc725xj41-art',
-      imgUrl: 'https://z-cdn.chatglm.cn/z-ai/static/share-logo.png',
-      success: function () {
-        console.log('[WeChat-Frontend-' + frontendCallId + '] 兼容版分享给朋友成功');
-      },
-      cancel: function () {
-        console.log('[WeChat-Frontend-' + frontendCallId + '] 兼容版分享给朋友取消');
-      }
-    });
-
-    wx.onMenuShareTimeline({
-      title: 'Z.AI Share',
-      link: 'http://chat.z.ai/space/n1mhc725xj41-art',
-      imgUrl: 'https://z-cdn.chatglm.cn/z-ai/static/share-logo.png',
-      success: function () {
-        console.log('[WeChat-Frontend-' + frontendCallId + '] 兼容版分享到朋友圈成功');
-      },
-      cancel: function () {
-        console.log('[WeChat-Frontend-' + frontendCallId + '] 兼容版分享到朋友圈取消');
-      }
-    });
-
-    console.log('[WeChat-Frontend-' + frontendCallId + '] 所有分享配置完成');
-  });
-
-  // 微信 JS-SDK 错误回调
-  wx.error(function(res){
-    console.error('[WeChat-Frontend-' + frontendCallId + '] 微信JS-SDK错误:', res);
-    console.error('[WeChat-Frontend-' + frontendCallId + '] 错误详情:', JSON.stringify(res, null, 2));
-    // 可以在这里处理签名验证失败等错误
-  });
-
-  console.log('[WeChat-Frontend-' + frontendCallId + '] ===== 微信JS-SDK初始化完成 =====');
-})();
-</script><script src="./index_files/187234156.js.download" type="text/javascript" async="" data-ueto="ueto_dd841431dc"></script><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.1.93/assets/_page-Cn0h-mQO.js"><link rel="stylesheet" crossorigin="" href="./index_files/_page-3CViShiz.css"></head>
-
-	<body><script src="./index_files/browser-sdk.js.download" crossorigin=""></script>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript>
-			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9CBCLPX" height="0" width="0"
-				style="display:none;visibility:hidden">
-			</iframe>
-		</noscript>
-		<!-- End Google Tag Manager (noscript) -->
-
-		<script>
-			const env = location.hostname === 'chat.z.ai' ? 'prod' : 'pre';
-			!(function (c, b, d, a) {
-				c[a] || (c[a] = {});
-				c[a] = {
-					pid: 'j2c03hoppk@9a8be198b65ba4b',
-					endpoint: 'https://j2c03hoppk-default-cn.rum.aliyuncs.com',
-					// 设置环境信息，参考值：'prod' | 'gray' | 'pre' | 'daily' | 'local'
-					env: env,
-					// 设置路由模式， 参考值：'history' | 'hash'
-					spaMode: 'history',
-					collectors: {
-						// 页面性能指标监听开关，默认开启
-						perf: true,
-						// WebVitals指标监听开关，默认开启
-						webVitals: false,
-						// Ajax监听开关，默认开启
-						api: true,
-						// 静态资源开关，默认开启
-						staticResource: true,
-						// JS错误监听开关，默认开启
-						jsError: true,
-						// 控制台错误监听开关，默认开启
-						consoleError: false,
-						// 用户行为监听开关，默认开启
-						action: true
-					},
-					// 链路追踪配置开关，默认关闭
-					tracing: false,
-					parseViewName(url) {
-						const pathname = new URL(url).pathname;
-						if (!pathname) {
-							return '/';
-						}
-						return pathname.replace(/(.*)\/[a-f0-9-]+$/g, '$1');
-					},
-					evaluateApi(options, response) {
-						const traceId = response?.headers?.get?.('X-Trace-Id') || 'unknown';
-
-						return {
-							name: options.url.replace(/\/[a-f0-9-]{36}/g, '/**'),
-							properties: {
-								traceId
-							}
-						};
-					}
-				};
-				with (b)
-					with (body)
-						with (insertBefore(createElement('script'), firstChild))
-							setAttribute('crossorigin', '', (src = d));
-			})(window, document, 'https://sdk.rum.aliyuncs.com/v2/browser-sdk.js', '__rum');
-		</script>
-		<div id="app" style="display: contents"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><iframe class="w-screen h-screen" frameborder="0" sandbox="allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox" title="html" src="./index_files/saved_resource.html"></iframe><!----> <section aria-live="polite" aria-relevant="additions text" aria-atomic="false" class="svelte-nbs0zk" tabindex="-1" aria-label="Notifications alt+T"><!----></section><!----> <div class="fixed top-[60px] right-4 z-[9999] flex flex-col gap-3 pointer-events-none"></div><!----><!----> <!----></div>
-
-		<script>
-			var token = localStorage.getItem('token');
-			var base = window.WEBUI_BASE_URL || '';
-			var lang = localStorage.locale ?? (navigator.language.includes('zh') ? 'zh-CN' : 'en-US');
-			var config = {
-				credentials: 'include',
-				headers: {
-					Accept: 'application/json',
-					'Content-Type': 'application/json',
-					...(token ? { Authorization: `Bearer ${token}` } : {}),
-					'Accept-Language': lang
-				}
-			};
-
-			var sessionFetch = fetch(`${base}/api/v1/auths/`, config).then(async (res) => {
-				if (!res.ok) throw await res.json();
-				return res.json();
-			});
-
-			window.GLOBAL_FETCHES = {
-				session: sessionFetch,
-				config: fetch(`${base}/api/config`, config).then(async (res) => {
-					if (!res.ok) throw await res.json();
-					return res.json();
-				}),
-				// token 存在时与其他请求并行；不存在时需等 session 之后再请求 models
-				// 至少要 cookie 里有 token 才能正常请求 models
-				models: token
-					? fetch(`${base}/api/models`, config)
-					: sessionFetch.then(() => fetch(`${base}/api/models`, config)),
-				settings:
-					token &&
-					fetch(`${base}/api/v1/users/user/settings`, config).then(async (res) => {
-						if (!res.ok) throw await res.json();
-						return res.json();
-					})
-			};
-		</script>
-		<script async="" src="./index_files/jquery.min.js.download"></script>
-	
-
-
-<style type="text/css" nonce="">
-	@keyframes pulse {
-		50% {
-			opacity: 0.65;
-		}
-	}
-
-	.animate-pulse-fast {
-		animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-	}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#171310">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="BRASA">
+<title>BRASA — habit streaks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+:root{--bg:#171310;--bg2:#100D0B;--card:#1F1A15;--card2:#262019;--line:#33291F;--line2:#45372A;
+--ink:#F3EADD;--dim:#A79A87;--faint:#6E6252;--fire:#FF8A3D;--amber:#FFC24B;--red:#E0564B;--ice:#8FB6CF;--gold:#FFC24B}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{background:#0C0A08;font-family:'Outfit',sans-serif;color:var(--ink);font-size:15px;overflow-x:hidden;display:flex;justify-content:center}
+button{font-family:inherit;cursor:pointer}svg{display:block}
+#app{width:100%;max-width:430px;min-height:100dvh;background:var(--bg);position:relative;display:flex;flex-direction:column}
+@media(min-width:480px){#app{border-left:1px solid #241D16;border-right:1px solid #241D16;box-shadow:0 0 80px rgba(0,0,0,.6)}}
+#topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:8px;padding:14px 16px 12px;
+background:rgba(23,19,16,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(51,41,31,.55)}
+.brand{display:flex;align-items:center;gap:8px}
+.brand svg{width:20px;height:30px}
+.brand span{font:800 15px 'Bricolage Grotesque';letter-spacing:.14em}
+.gempill{display:inline-flex;align-items:center;gap:6px;background:var(--card2);border:1px solid var(--line);
+border-radius:999px;padding:6px 11px;color:var(--gold);font:700 13px 'Bricolage Grotesque';margin-left:auto}
+.gempill svg{width:14px;height:14px}
+.gempill.bump{animation:bump .55s}
+@keyframes bump{30%{transform:scale(1.2)}}
+.iconbtn{width:36px;height:36px;border-radius:11px;background:var(--card2);border:1px solid var(--line);
+color:var(--dim);display:flex;align-items:center;justify-content:center;flex:none}
+.iconbtn:active{transform:scale(.92)}.iconbtn svg{width:16px;height:16px}
+main{flex:1;padding:0 16px calc(100px + env(safe-area-inset-bottom))}
+.view{display:none}.view.active{display:block;animation:viewIn .28s ease}
+@keyframes viewIn{from{opacity:0;transform:translateY(10px)}}
+.viewhead{display:flex;align-items:center;justify-content:space-between;margin:16px 0 14px}
+.viewhead h2{font:800 24px 'Bricolage Grotesque'}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px}
+/* llama */
+.flame-wrap{position:relative;width:96px;height:122px;flex:none;display:flex;align-items:flex-end;justify-content:center}
+.flame{width:74px;height:114px;filter:drop-shadow(0 6px 18px rgba(255,138,61,.22))}
+.flame path{transform-box:fill-box;transform-origin:50% 100%}
+.flame-outer{animation:flick1 1.7s ease-in-out infinite}
+.flame-inner{animation:flick2 1.15s ease-in-out infinite}
+.flame-core{animation:flick1 .9s ease-in-out infinite reverse}
+@keyframes flick1{0%,100%{transform:scale(1) skewX(0)}30%{transform:scale(1.04,.94) skewX(1.4deg)}65%{transform:scale(.96,1.06) skewX(-1.6deg)}}
+@keyframes flick2{0%,100%{transform:scale(1)}40%{transform:scale(.92,1.08) skewX(-2deg)}70%{transform:scale(1.06,.93) skewX(1.6deg)}}
+.flame-glow{position:absolute;inset:-22%;background:radial-gradient(circle at 50% 70%,rgba(255,138,61,.16),transparent 62%);pointer-events:none}
+.spark{position:absolute;bottom:16px;left:52%;width:4px;height:4px;border-radius:50%;background:var(--amber);opacity:0;animation:rise 2.8s ease-out infinite}
+.spark.s2{left:38%;--dx:-10px;animation-delay:.9s;width:3px;height:3px}
+.spark.s3{left:60%;--dx:12px;animation-delay:1.7s}
+.spark.s4{left:45%;--dx:-16px;animation-delay:.4s;width:3px;height:3px}
+.spark.s5{left:57%;--dx:7px;animation-delay:2.2s;width:2.5px;height:2.5px}
+@keyframes rise{0%{transform:translate(0,0);opacity:0}12%{opacity:.85}100%{transform:translate(var(--dx,6px),-64px);opacity:0}}
+.flame-wrap.dead{filter:grayscale(.9) brightness(.62)}.flame-wrap.dead .spark{display:none}
+.flame-wrap.small{width:64px;height:84px}.flame-wrap.small .flame{width:46px;height:70px}
+.flame-wrap.big-on{width:110px;height:138px}.flame-wrap.big-on .flame{width:86px;height:132px}
+/* hero */
+.hero{display:flex;align-items:center;gap:18px;padding:22px 22px 18px;margin-top:14px}
+.hero.blazing .flame{filter:drop-shadow(0 6px 28px rgba(255,194,75,.45))}
+.hero-info{min-width:0}
+.hero .big{font:800 72px/0.95 'Bricolage Grotesque';letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.hero.blazing .big{color:var(--amber)}
+.hero-lbl{color:var(--dim);font-size:13px;margin-top:3px}
+.hero-sub{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.chipstat{display:inline-flex;align-items:center;gap:5px;background:var(--card2);border:1px solid var(--line);
+border-radius:999px;padding:5px 10px;color:var(--dim);font:600 11.5px Outfit}
+.chipstat svg{width:12px;height:12px}
+.chipstat.c-gold svg{color:var(--gold)}.chipstat.c-ice svg{color:var(--ice)}
+.prog{margin-top:12px;padding:16px 18px}
+.prog-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:11px}
+.prog-title{font:700 15px 'Bricolage Grotesque'}
+.prog-count{color:var(--dim);font-size:13px;font-variant-numeric:tabular-nums}
+.bar{height:9px;border-radius:99px;background:var(--bg2);border:1px solid var(--line);overflow:hidden}
+.fill{height:100%;background:var(--fire);border-radius:99px;transition:width .5s cubic-bezier(.3,1,.4,1)}
+.countdown{display:flex;align-items:center;gap:6px;margin-top:11px;font-size:12px;color:var(--faint);font-variant-numeric:tabular-nums}
+.countdown svg{width:13px;height:13px}
+.countdown.urgent{color:var(--fire)}.countdown.urgent svg{color:var(--fire);animation:pulse 1s infinite}
+@keyframes pulse{50%{opacity:.4}}
+/* cards */
+.stack{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.hcard{padding:15px;position:relative;overflow:hidden}
+.hcard.st-done::before,.hcard.st-fail::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px}
+.hcard.st-done::before{background:var(--fire)}.hcard.st-fail::before{background:var(--red)}
+.hcard.nd{opacity:.75}
+.hrow{display:flex;gap:13px;align-items:center}
+.hicon{width:46px;height:46px;border-radius:15px;background:var(--card2);border:1px solid var(--line);
+display:flex;align-items:center;justify-content:center;color:var(--fire);flex:none}
+.hicon svg{width:21px;height:21px}
+.hmain{flex:1;min-width:0}
+.hname{font-weight:600;font-size:15.5px;margin-bottom:5px;word-wrap:break-word}
+.hmeta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tchip{display:inline-flex;align-items:center;gap:4px;font:600 10.5px Outfit;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:999px}
+.tchip.build{color:#A8C88A;background:rgba(140,180,110,.12)}
+.tchip.quit{color:#E58A80;background:rgba(224,86,75,.12)}
+.tchip svg{width:11px;height:11px}
+.mini-streak{display:inline-flex;align-items:center;gap:3px;color:var(--dim);font-size:11.5px;font-weight:600;font-variant-numeric:tabular-nums}
+.mini-streak svg{width:11px;height:11px;color:var(--fire)}
+.wchip{display:inline-flex;align-items:center;gap:4px;color:var(--dim);font:600 11.5px Outfit;font-variant-numeric:tabular-nums}
+.wchip.ok{color:#A8C88A}
+.duechip{display:inline-flex;align-items:center;gap:4px;background:rgba(255,138,61,.14);color:var(--amber);
+border:1px solid rgba(255,138,61,.4);border-radius:999px;padding:3px 8px;font:700 9.5px Outfit;letter-spacing:.08em;text-transform:uppercase}
+.duechip svg{width:11px;height:11px}
+.dim2{color:var(--faint);font-size:11.5px}
+.hnote{color:var(--faint);font-size:11.5px;margin-top:6px;line-height:1.4}
+.tierrow{display:flex;gap:7px;margin-top:12px}
+.tierpill{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 4px;border-radius:12px;
+background:var(--bg2);border:1.5px solid var(--line);color:var(--dim);transition:transform .12s}
+.tierpill:active{transform:scale(.94)}
+.tierpill b{font:700 9px Outfit;letter-spacing:.12em}
+.tierpill span{font:600 12.5px Outfit;color:var(--ink)}
+.tierpill.on{background:var(--fire);border-color:var(--fire);animation:pop .35s}
+.tierpill.on b{color:rgba(42,21,8,.65)}.tierpill.on span{color:#2A1508}
+@keyframes pop{0%{transform:scale(.7)}60%{transform:scale(1.13)}100%{transform:scale(1)}}
+.checkbtn{width:52px;height:52px;border-radius:18px;border:1.5px solid var(--line2);background:var(--card2);
+color:var(--faint);display:flex;align-items:center;justify-content:center;flex:none;transition:transform .12s}
+.checkbtn:active{transform:scale(.88)}
+.checkbtn svg{width:24px;height:24px}
+.checkbtn.on{background:var(--fire);border-color:var(--fire);color:#2A1508;animation:pop .35s}
+.hitsrow{display:flex;align-items:center;gap:10px;margin-top:12px;padding-top:11px;border-top:1px dashed var(--line);flex-wrap:wrap}
+.stepper{display:flex;align-items:center;gap:3px;background:var(--bg2);border:1px solid var(--line);border-radius:11px;padding:3px}
+.stepper button{width:30px;height:30px;border-radius:8px;background:var(--card2);border:1px solid var(--line);
+color:var(--ink);font:700 16px Outfit;display:flex;align-items:center;justify-content:center}
+.stepper button:active{transform:scale(.9)}
+.hitsnum{min-width:56px;text-align:center;font:700 14px 'Bricolage Grotesque';font-variant-numeric:tabular-nums}
+.hitslbl{color:var(--faint);font-size:11.5px}
+.hitsrow.over .hitsnum{color:var(--red)}
+.subrow{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;padding-top:11px;
+border-top:1px dashed var(--line);font-size:12.5px;color:var(--dim)}
+.subrow.is-fail{color:var(--red);font-weight:600}
+.subrow svg{width:13px;height:13px;vertical-align:-2px;margin-right:4px}
+.linkbtn{background:none;border:0;color:var(--fire);font:600 12.5px Outfit;padding:4px 6px}
+.linkbtn.danger{color:var(--red)}
+.rowbtn{cursor:pointer}
+.chev{color:var(--faint);width:18px;height:18px;flex:none}
+.arch{opacity:.65}
+.archhead{font:700 12px Outfit;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin:22px 0 10px}
+/* misc */
+.empty{padding:34px 22px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:14px}
+.empty h3{font:700 19px 'Bricolage Grotesque';margin-top:12px}
+.empty p{color:var(--dim);font-size:13.5px;margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--fire);color:#2A1508;
+border:0;border-radius:14px;padding:13px 20px;font:700 14px Outfit;transition:transform .12s}
+.btn:active{transform:scale(.96)}.btn svg{width:17px;height:17px}
+.btn.wide{width:100%}
+.btn.small{padding:9px 14px;font-size:13px;border-radius:11px}
+.btn.disabled{background:var(--card2);color:var(--faint);cursor:not-allowed}
+.btn.ghost{background:transparent;border:1px solid var(--line2);color:var(--dim)}
+.btn.dangerb{background:transparent;border:1px solid rgba(224,86,75,.45);color:var(--red)}
+.btn.dangerb.armed{background:var(--red);border-color:var(--red);color:#2A0E0B}
+.statband{display:flex;padding:18px 6px;margin-top:14px}
+.stat{flex:1;text-align:center;border-left:1px solid var(--line)}
+.stat:first-child{border:0}
+.sv{font:800 26px 'Bricolage Grotesque';font-variant-numeric:tabular-nums}
+.sl{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-top:3px}
+.block{padding:18px;margin-top:14px}
+.blocktitle,.blocktitle2{font:700 13px Outfit;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);margin-bottom:14px}
+.blocktitle2{margin-top:20px}
+/* heatmap */
+.hm{position:relative;padding-left:17px}
+.hmgrid{display:grid;grid-template-rows:repeat(7,12px);grid-auto-flow:column;grid-auto-columns:12px;gap:3px}
+.hc{width:12px;height:12px;border-radius:3px;background:#241E18;display:block}
+.hc.full{background:var(--fire)}.hc.part{background:#7A431F}.hc.failc{background:var(--red)}
+.hc.frozen{background:var(--ice)}.hc.off{background:#241E18}
+.hc.today{box-shadow:0 0 0 1.5px var(--ink)}
+.hc.void{visibility:hidden}
+.hmdays{position:absolute;left:0;top:0}
+.hmdays span{display:block;height:12px;font-size:8.5px;line-height:12px;color:var(--faint);margin-bottom:3px}
+.hmlabels{position:relative;height:13px;margin-left:17px;margin-bottom:5px}
+.ml{position:absolute;font-size:10px;color:var(--faint)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:14px}
+.lg{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--faint)}
+.sw{width:10px;height:10px;border-radius:3px;display:inline-block}
+.tle{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid rgba(51,41,31,.5)}
+.tle:last-child{border:0}
+.tle .ic{width:32px;height:32px;border-radius:10px;background:var(--card2);display:flex;align-items:center;justify-content:center;color:var(--dim);flex:none}
+.tle .ic svg{width:15px;height:15px}
+.ic.c-fire{color:var(--fire)}.ic.c-ice{color:var(--ice)}.ic.c-red{color:var(--red)}.ic.c-gold{color:var(--gold)}
+.tle .tx{font-size:13.5px;line-height:1.35;padding-top:5px}
+.tle .dt{font-size:11px;color:var(--faint);margin-top:3px}
+/* tabbar */
+.tabbar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;display:flex;
+background:rgba(23,19,16,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+border-top:1px solid var(--line);padding:6px 8px calc(7px + env(safe-area-inset-bottom));z-index:40}
+.tabbtn{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 0 5px;background:none;border:0;
+color:var(--faint);font:500 11px Outfit}
+.tabbtn svg{width:22px;height:22px}
+.tabbtn.on{color:var(--fire)}
+/* toasts */
+#toasts{position:fixed;bottom:calc(84px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);
+display:flex;flex-direction:column;align-items:center;gap:8px;z-index:60;width:calc(100% - 40px);max-width:390px;pointer-events:none}
+.toast{display:flex;align-items:center;gap:10px;background:#2A231C;border:1px solid var(--line2);color:var(--ink);
+border-radius:14px;padding:11px 16px;font:600 13px Outfit;box-shadow:0 10px 30px rgba(0,0,0,.5);
+animation:toastIn .3s cubic-bezier(.2,.9,.3,1.2);max-width:100%}
+.toast svg{width:16px;height:16px;color:var(--fire);flex:none}
+.toast.out{animation:toastOut .25s forwards}
+@keyframes toastIn{from{opacity:0;transform:translateY(14px) scale(.92)}}
+@keyframes toastOut{to{opacity:0;transform:translateY(8px)}}
+/* sheet */
+#backdrop{position:fixed;inset:0;background:rgba(8,6,4,.62);opacity:0;pointer-events:none;transition:opacity .25s;z-index:50}
+#backdrop.open{opacity:1;pointer-events:auto}
+#sheet{position:fixed;bottom:0;left:50%;transform:translate(-50%,105%);width:100%;max-width:430px;background:var(--card);
+border-radius:26px 26px 0 0;border:1px solid var(--line);border-bottom:0;
+padding:10px 20px calc(24px + env(safe-area-inset-bottom));z-index:51;
+transition:transform .38s cubic-bezier(.32,.72,.28,1);max-height:88dvh;overflow-y:auto}
+#sheet.open{transform:translate(-50%,0)}
+.grab{width:40px;height:4px;border-radius:2px;background:var(--line2);margin:2px auto 16px}
+.sh-title{font:800 21px 'Bricolage Grotesque';margin-bottom:16px}
+.input{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:13px;color:var(--ink);
+font:500 15px Outfit;padding:13px 15px;outline:none;margin-bottom:14px}
+.input:focus{border-color:var(--fire)}
+.typesel{display:flex;gap:10px;margin-bottom:16px}
+.topt{flex:1;display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:13px;border-radius:15px;
+background:var(--bg2);border:1.5px solid var(--line);color:var(--dim);text-align:left}
+.topt svg{width:19px;height:19px}
+.topt b{display:block;font-size:13.5px;color:var(--ink)}
+.topt span{font-size:11px;line-height:1.3}
+.topt.sel{border-color:var(--fire);background:rgba(255,138,61,.08)}
+.iconlabel{font:700 12px Outfit;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin-bottom:9px}
+.icongrid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:18px}
+.icb{aspect-ratio:1;border-radius:13px;background:var(--bg2);border:1.5px solid var(--line);color:var(--dim);
+display:flex;align-items:center;justify-content:center}
+.icb svg{width:19px;height:19px}
+.icb.sel{border-color:var(--fire);color:var(--fire);background:rgba(255,138,61,.09)}
+.freqsel{display:flex;gap:6px;margin-bottom:16px}
+.fbtn{flex:1;padding:10px 0;border-radius:11px;background:var(--bg2);border:1.5px solid var(--line);color:var(--dim);font:600 12.5px Outfit}
+.fbtn.sel{border-color:var(--fire);color:var(--ink);background:rgba(255,138,61,.08)}
+.trow{display:grid;grid-template-columns:64px 1fr;gap:7px;align-items:center;margin-bottom:7px}
+.trow .tl{font:700 11px Outfit;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+.trow .input{margin:0;padding:9px 10px;font-size:13px}
+.schedro{background:var(--bg2);border:1px solid var(--line);border-radius:13px;padding:12px 14px;margin-bottom:16px}
+.schedro div{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:var(--dim);padding:4px 0}
+.schedro b{color:var(--ink);font-weight:600}
+.row-actions{display:flex;gap:10px;margin-top:12px}
+.row-actions .btn{flex:1;padding:11px}
+.rules{list-style:none;display:flex;flex-direction:column;gap:13px;margin:6px 0 4px}
+.rules li{display:flex;gap:12px;align-items:flex-start;font-size:13.5px;color:var(--dim);line-height:1.45}
+.rules b{color:var(--ink)}
+.rules svg{width:18px;height:18px;flex:none;margin-top:1px;color:var(--fire)}
+.rules li.r2 svg{color:var(--ice)}.rules li.r3 svg{color:var(--red)}.rules li.r4 svg{color:var(--ice)}.rules li.r5 svg{color:var(--gold)}
+.streak-hero{display:flex;align-items:center;gap:16px;background:var(--card2);border-radius:17px;padding:14px 16px;margin-bottom:4px}
+.big2{font:800 40px/1 'Bricolage Grotesque';font-variant-numeric:tabular-nums}
+.shieldslots{display:flex;gap:8px}
+.slot{width:44px;height:44px;border-radius:14px;border:1.5px dashed var(--line2);display:flex;align-items:center;justify-content:center;color:var(--faint)}
+.slot.on{border:1.5px solid var(--ice);background:rgba(143,182,207,.12);color:var(--ice)}
+.slot svg{width:19px;height:19px}
+.buyrow{display:flex;align-items:center;gap:12px;margin:16px 0 4px}
+.buyrow .btn{flex:1}
+.hint{font-size:12px;margin-top:10px;line-height:1.4}
+.steps{display:flex;flex-direction:column;gap:14px;margin:16px 0}
+.step{background:var(--bg2);border:1px solid var(--line);border-radius:15px;padding:13px 15px}
+.step-badge{display:inline-block;font:700 11px Outfit;letter-spacing:.08em;color:var(--fire);margin-bottom:8px}
+.step ol{margin-left:18px;color:var(--dim);font-size:13.5px;display:flex;flex-direction:column;gap:5px}
+.step b{color:var(--ink)}
+/* onboarding */
+.onboard{position:fixed;inset:0;z-index:70;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:28px;overflow-y:auto}
+.onboard.hidden{display:none}
+.onboard.out{animation:fadeOut .55s forwards}
+@keyframes fadeOut{to{opacity:0;visibility:hidden}}
+.onboard-inner{max-width:330px;text-align:center;display:flex;flex-direction:column;align-items:center;padding:30px 0}
+.onboard h1{font:800 36px 'Bricolage Grotesque';letter-spacing:.16em;margin:20px 0 10px}
+.tagline{color:var(--dim);font-size:14.5px;line-height:1.55;margin-bottom:26px}
+.ob-rules{list-style:none;display:flex;flex-direction:column;gap:15px;text-align:left;margin-bottom:30px;width:100%}
+.ob-rules li{display:flex;gap:13px;align-items:flex-start;font-size:13.5px;color:var(--dim);line-height:1.45}
+.ob-rules b{color:var(--ink)}
+.ob-rules svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--fire)}
+.ob-rules li.r2 svg{color:var(--ice)}.ob-rules li.r3 svg{color:var(--gold)}
+#fx{position:fixed;inset:0;z-index:99;pointer-events:none}
 </style>
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div class="brand"><span id="brandflame"></span><span>BRASA</span></div>
+    <button class="gempill" data-action="geminfo"><i data-lucide="gem"></i><span id="gemcount">0</span></button>
+    <button class="iconbtn" id="btnSound" data-action="sound" aria-label="sound"></button>
+    <button class="iconbtn" data-action="install" aria-label="install"><i data-lucide="download"></i></button>
+  </header>
+  <main>
+    <section id="view-today" class="view active"></section>
+    <section id="view-habits" class="view"></section>
+    <section id="view-history" class="view"></section>
+  </main>
+  <nav class="tabbar">
+    <button class="tabbtn on" data-action="tab" data-view="today"><i data-lucide="flame"></i>Today</button>
+    <button class="tabbtn" data-action="tab" data-view="habits"><i data-lucide="list-checks"></i>Habits</button>
+    <button class="tabbtn" data-action="tab" data-view="history"><i data-lucide="calendar"></i>History</button>
+  </nav>
+</div>
+<div id="toasts"></div>
+<canvas id="fx"></canvas>
+<div id="backdrop" data-action="close-sheet"></div>
+<div id="sheet"></div>
+<div id="onboard" class="onboard hidden">
+  <div class="onboard-inner">
+    <span id="onboardflame"></span>
+    <h1>BRASA</h1>
+    <p class="tagline">Build the good habits, cut the bad ones —<br>and keep the flame alive.</p>
+    <ul class="ob-rules">
+      <li><i data-lucide="flame"></i><span>Log everything <b>due today</b> before midnight and your streak grows +1. Weekly habits only come due when you fall behind pace.</span></li>
+      <li class="r2"><i data-lucide="snowflake"></i><span>Miss a day with a <b>shield</b> and the streak freezes instead of breaking. Max <b>2 shields</b>, like Duolingo.</span></li>
+      <li class="r3"><i data-lucide="gem"></i><span>Earn <b>gems</b> for logging habits, perfect days and weekly targets — spend them on shields.</span></li>
+    </ul>
+    <button class="btn" style="padding:15px 30px" data-action="finish-onboard"><i data-lucide="flame"></i>Light the flame</button>
+  </div>
+</div>
+<script>
+/* ===== utils ===== */
+const $=s=>document.querySelector(s);
+const pad=n=>String(n).padStart(2,'0');
+const iso=d=>d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+const todayISO=()=>iso(new Date());
+const parseISO=s=>{const p=s.split('-').map(Number);return new Date(p[0],p[1]-1,p[2]);};
+const addDays=(s,n)=>{const d=parseISO(s);d.setDate(d.getDate()+n);return iso(d);};
+const fmtDate=s=>parseISO(s).toLocaleDateString('en',{day:'numeric',month:'short'});
+const relDay=s=>s===todayISO()?'today':(s===addDays(todayISO(),-1)?'yesterday':fmtDate(s));
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+const MESES=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const DIAS=['M','T','W','T','F','S','S'];
+const DAYNAMES=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+const icons=()=>{if(window.lucide)lucide.createIcons();};
+const vib=p=>{try{navigator.vibrate&&navigator.vibrate(p);}catch(e){}};
+const dIdx=d=>(parseISO(d).getDay()+6)%7; // 0=Mon..6=Sun
+const weekStart=d=>addDays(d,-dIdx(d));
 
-<script type="text/javascript" id="" charset="">!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1.1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="https://static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("config","q5hbv");</script>
+/* ===== flame ===== */
+const D_OUT='M35 2 C37 15 43 23 50 31 C58 41 62 48 62 60 C62 77 50 90 35 90 C20 90 8 77 8 60 C8 47 13 38 19 31 C21 38 25 42 29 43 C28 30 32 15 35 2 Z';
+const D_IN='M35 34 C36 42 41 46 45 51 C49 56 51 60 51 66 C51 76 44 83 35 83 C26 83 19 76 19 66 C19 59 22 54 26 50 C27 55 30 58 33 58 C31 50 33 42 35 34 Z';
+const D_CORE='M35 50 C36 55 40 58 42 62 C44 65 45 67 45 70 C45 76 41 80 35 80 C29 80 25 76 25 70 C25 66 27 63 29 60 C30 63 32 65 34 64 C32 58 33 54 35 50 Z';
+function flameSVG(g=true){return (g?'<span class="flame-glow"></span>':'')+
+'<svg class="flame" viewBox="0 0 70 108"><path class="flame-outer" d="'+D_OUT+'" fill="#FF8A3D"/>'+
+'<path class="flame-inner" d="'+D_IN+'" fill="#FFC24B"/>'+
+'<path class="flame-core" d="'+D_CORE+'" fill="#FFEFC9"/></svg>'+
+'<span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span><span class="spark s4"></span><span class="spark s5"></span>';}
+ $('#brandflame').innerHTML='<svg viewBox="0 0 70 108" width="20" height="30"><path d="'+D_OUT+'" fill="#FF8A3D"/><path d="'+D_IN+'" fill="#FFC24B"/></svg>';
+ $('#onboardflame').innerHTML='<div class="flame-wrap big-on">'+flameSVG()+'</div>';
 
-<script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1921933375117245");fbq("set","agent","tmgoogletagmanager","1921933375117245");fbq("track","PageView");</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1921933375117245&amp;ev=PageView&amp;noscript=1"></noscript>
-<img src="./index_files/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="./index_files/adsct(1)" height="1" width="1" fetchpriority="high" style="display: none;"><div id="batBeacon968321629242" style="width: 0px; height: 0px; display: none; visibility: hidden;"><img id="batBeacon944573176793" width="0" height="0" alt="" src="./index_files/0" style="width: 0px; height: 0px; display: none; visibility: hidden;"></div><img src="./index_files/adsct(2)" height="1" width="1" fetchpriority="high" style="display: none;"><img src="./index_files/adsct(3)" height="1" width="1" fetchpriority="high" style="display: none;"></body></html>
+/* ===== seed habits (your rules) ===== */
+function seedHabits(){
+  const t=todayISO();
+  const weedSched={0:{w:'5–11 PM',max:4},1:{w:'5–11 PM',max:4},2:{w:'5–11 PM',max:4},3:{w:'5–11 PM',max:4},
+    4:{w:'free day'},5:{w:'free day'},6:{w:'free until 5 PM, then 5–11 PM',max:4}};
+  const vapeSched={};for(let i=0;i<7;i++)vapeSched[i]={w:'12 PM – 12 AM'};
+  return [
+    {id:'en',name:'English self-study',type:'build',icon:'languages',created:t,freq:5,
+     tiers:[{l:'Min',v:'20 min'},{l:'Mid',v:'40 min'},{l:'Ideal',v:'60 min'}],
+     note:'At least 5 days a week · consume content in English only'},
+    {id:'exp',name:'Log expenses',type:'build',icon:'receipt',created:t,freq:7,
+     tiers:[{l:'Min',v:'1 expense'},{l:'Mid',v:'some'},{l:'Ideal',v:'all'}],
+     note:'Log spending daily, all week · part of the English routine'},
+    {id:'run',name:'Go for a run',type:'build',icon:'footprints',created:t,freq:2,
+     tiers:[{l:'Min',v:'1 km'},{l:'Mid',v:'2 km'},{l:'Ideal',v:'3 km'}],
+     note:'2 runs a week'},
+    {id:'sr',name:'Speed reading course',type:'build',icon:'graduation-cap',created:t,freq:5,
+     tiers:[{l:'Min',v:'1 session'},{l:'Ideal',v:'2 sessions'}],
+     note:'Sessions Mon–Fri, 15 min each'},
+    {id:'sto',name:'Read stoicism',type:'build',icon:'scroll',created:t,freq:2,
+     tiers:[{l:'Min',v:'5 min'},{l:'Mid',v:'15 min'},{l:'Ideal',v:'30 min'}],
+     note:'At least 2 days a week · 1 chapter'},
+    {id:'weed',name:'Ease off the grass',type:'quit',icon:'cannabis',created:t,sched:weedSched,unit:'hits',
+     note:'A hit = one medium bong hit or equivalent'},
+    {id:'vape',name:'Ease off the vape',type:'quit',icon:'wind',created:t,sched:vapeSched,
+     note:'Never vape while resting'}
+  ];
+}
+
+/* ===== state ===== */
+const KEY='brasa.v2';
+const SHIELD_COST=150;
+const TIER_GEMS=[5,7,10];
+const TYPE={build:{label:'Build',icon:'sprout'},quit:{label:'Cut',icon:'ban'}};
+const ICONS=['flame','languages','graduation-cap','book-open','scroll','brain','dumbbell','footprints','bike',
+'moon','sun','alarm-clock','droplets','salad','utensils','piggy-bank','receipt','heart-pulse','pencil','music',
+'bed','smartphone','wind','cannabis','wine-off','cigarette-off','tv-off','gamepad-2','sprout','target'];
+let state={onboarded:false,habits:seedHabits(),log:{},frozen:{},paid:{},
+  gems:120,shields:0,best:0,events:[],lastSeen:null,sound:true,view:'today'};
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+function load(){try{const r=localStorage.getItem(KEY);if(r)state=Object.assign(state,JSON.parse(r));}catch(e){}}
+
+/* ===== streak logic ===== */
+function activeOn(d){return state.habits.filter(h=>h.created<=d&&(!h.archivedAt||h.archivedAt>=d));}
+function earliest(){let m=todayISO();for(const h of state.habits){if(h.created<m)m=h.created;}return m;}
+function isDue(h,d){
+  if(h.sched)return true;
+  const f=h.freq||7;if(f>=7)return true;
+  const ws=weekStart(d),el=dIdx(d);let done=0;
+  for(let i=0;i<=el;i++){const dd=addDays(ws,i);if(dd<h.created)continue;
+    const r=(state.log[dd]||{})[h.id];if(r&&r.s==='done')done++;}
+  return done+(6-el)<f; // skipping today makes the weekly target unreachable
+}
+function dayStatus(d){
+  const acts=activeOn(d);
+  if(!acts.length)return 'inactive';
+  let due=0,done=0,fail=0;
+  for(const h of acts){
+    if(!isDue(h,d))continue;due++;
+    const r=(state.log[d]||{})[h.id];
+    if(r&&r.s==='done')done++;
+    if(r&&r.s==='fail')fail++;
+  }
+  if(fail)return 'fail';
+  if(due===0||done===due)return 'complete';
+  if(done)return 'partial';
+  return 'miss';
+}
+function computeStreak(){
+  let d=todayISO();
+  if(dayStatus(d)!=='complete')d=addDays(d,-1);
+  const first=earliest();let n=0;
+  for(let i=0;i<4000;i++){
+    if(d<first)break;
+    if(state.frozen[d]){d=addDays(d,-1);continue;}
+    if(dayStatus(d)==='complete'){n++;d=addDays(d,-1);}else break;
+  }
+  return n;
+}
+function weekCount(h){
+  const ws=weekStart(todayISO()),el=dIdx(todayISO());let n=0;
+  for(let i=0;i<=el;i++){const dd=addDays(ws,i);if(dd<h.created)continue;
+    const r=(state.log[dd]||{})[h.id];if(r&&r.s==='done')n++;}
+  return n;
+}
+function totalDone(h){let n=0;for(const d in state.log){const r=state.log[d][h.id];if(r&&r.s==='done')n++;}return n;}
+function reconcile(){
+  const t=todayISO();
+  if(!state.lastSeen){state.lastSeen=t;save();return;}
+  if(state.lastSeen>=t)return;
+  let d=addDays(state.lastSeen,1);
+  while(d<t){
+    const st=dayStatus(d);
+    if(st==='fail'||st==='partial'||st==='miss'){
+      if(state.shields>0){state.shields--;state.frozen[d]=true;addEvent('shield',d,'Shield used: streak frozen');}
+      else addEvent('broken',d,'Streak broken: a due habit was left unlogged');
+    }else if(st==='complete')addEvent('complete',d,'Perfect day');
+    d=addDays(d,1);
+  }
+  state.lastSeen=t;
+  const cur=computeStreak();if(cur>state.best)state.best=cur;
+  save();
+}
+function addEvent(type,date,msg){state.events.unshift({type,date,msg,ts:Date.now()});if(state.events.length>80)state.events.length=80;}
+
+/* ===== gems ===== */
+function gainGems(n){
+  state.gems+=n;syncHeader();
+  const p=$('.gempill');if(p){p.classList.remove('bump');void p.offsetWidth;p.classList.add('bump');}
+  sndCoin();
+}
+
+/* ===== marking ===== */
+function setMark(hid,s,t){
+  const d=todayISO();
+  const day=state.log[d]||(state.log[d]={});
+  const prev=day[hid]||{};
+  const rec={hits:prev.hits};
+  if(s){rec.s=s;if(t!=null)rec.t=t;}
+  if(!rec.s&&!rec.hits)delete day[hid];else day[hid]=rec;
+  let delta=0;const p=state.paid[d]||(state.paid[d]={});
+  if(s==='done'&&prev.s!=='done'){
+    if(!p[hid]){p[hid]=true;delta+=(t!=null?(TIER_GEMS[t]||5):5);}
+    const h=state.habits.find(x=>x.id===hid);
+    if(h&&!h.sched&&(h.freq||7)<7){
+      const ws=weekStart(d),wk='w'+hid+ws;
+      if(weekCount(h)>=(h.freq||7)&&!p[wk]){p[wk]=true;delta+=15;
+        addEvent('milestone',d,'Weekly target hit: '+h.name);
+        setTimeout(()=>{toast('Weekly target: '+h.name+' · +15 gems','trophy');burstCenter();sndMilestone();},700);}
+    }
+    if(dayStatus(d)==='complete'&&!p['#day']){
+      p['#day']=true;delta+=10;
+      const cur=computeStreak();if(cur>state.best)state.best=cur;
+      addEvent('complete',d,'Perfect day · streak of '+cur);
+      setTimeout(()=>{celebrateDay();sndFanfare();toast('Perfect day! Streak '+cur,'flame');},150);
+      if(cur>0&&cur%7===0&&!p['#m'+cur]){p['#m'+cur]=true;delta+=30;
+        addEvent('milestone',d,'Milestone: '+cur+'-day streak');
+        setTimeout(()=>{toast('Milestone: '+cur+'-day streak · +30 gems','trophy');burstCenter();sndMilestone();},1300);}
+    }
+  }
+  if(delta>0)gainGems(delta);
+  if(s==='done'){sndPop();vib(12);}
+  else if(s==='fail'){sndFail();vib([30,40,30]);}
+  else sndClick();
+  save();render();
+}
+function toggleDone(id){const r=(state.log[todayISO()]||{})[id];setMark(id,r&&r.s==='done'?null:'done');}
+function toggleFail(id){const r=(state.log[todayISO()]||{})[id];setMark(id,r&&r.s==='fail'?null:'fail');}
+function setHits(hid,n){
+  const d=todayISO();const day=state.log[d]||(state.log[d]={});
+  const rec=day[hid]||{};rec.hits=Math.max(0,n);day[hid]=rec;
+  sndClick();vib(8);save();render();
+}
+
+/* ===== sound ===== */
+let AC=null;
+function tone(f,d,type,v,slide,delay){
+  if(!state.sound)return;
+  try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();
+  if(AC.state==='suspended')AC.resume();
+  const t0=AC.currentTime+(delay||0);
+  const o=AC.createOscillator(),g=AC.createGain();
+  o.type=type||'triangle';o.frequency.setValueAtTime(f,t0);
+  if(slide)o.frequency.exponentialRampToValueAtTime(slide,t0+d);
+  g.gain.setValueAtTime(v||.12,t0);g.gain.exponentialRampToValueAtTime(.0001,t0+d);
+  o.connect(g);g.connect(AC.destination);o.start(t0);o.stop(t0+d+.05);}catch(e){}
+}
+const sndPop=()=>tone(560,.09,'triangle',.14,880);
+const sndClick=()=>tone(300,.05,'triangle',.07);
+const sndFail=()=>tone(210,.22,'sawtooth',.06,120);
+const sndCoin=()=>{tone(1046,.07,'square',.045);tone(1568,.12,'square',.035,.07);};
+const sndFanfare=()=>{tone(523,.12);tone(659,.12,'triangle',.12,.11);tone(784,.24,'triangle',.12,.22);};
+const sndMilestone=()=>{tone(659,.1);tone(880,.1,'triangle',.1,.1);tone(1175,.26,'triangle',.1,.2);};
+
+/* ===== confetti ===== */
+const fxCv=$('#fx'),fxCtx=fxCv.getContext('2d');
+let parts=[],fxRun=false;
+const CCOL=['#FF8A3D','#FFC24B','#FFE9C9','#E0564B','#8FB6CF'];
+function burst(x,y,n){
+  const dpr=Math.min(window.devicePixelRatio||1,2);
+  fxCv.width=innerWidth*dpr;fxCv.height=innerHeight*dpr;
+  fxCtx.setTransform(dpr,0,0,dpr,0,0);
+  for(let i=0;i<(n||110);i++){
+    const a=Math.random()*Math.PI*2,sp=2+Math.random()*7;
+    parts.push({x,y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp-4,w:3+Math.random()*6,h:2+Math.random()*4,
+      rot:Math.random()*Math.PI,vr:(Math.random()-.5)*.3,c:CCOL[(Math.random()*CCOL.length)|0],
+      life:1,dec:.006+Math.random()*.008});}
+  if(!fxRun)fxLoop();
+}
+function fxLoop(){
+  fxRun=true;fxCtx.clearRect(0,0,innerWidth,innerHeight);
+  parts=parts.filter(p=>p.life>0&&p.y<innerHeight+40);
+  for(const p of parts){p.x+=p.vx;p.y+=p.vy;p.vy+=.22;p.vx*=.985;p.rot+=p.vr;p.life-=p.dec;
+    fxCtx.save();fxCtx.translate(p.x,p.y);fxCtx.rotate(p.rot);
+    fxCtx.globalAlpha=Math.max(0,p.life);fxCtx.fillStyle=p.c;
+    fxCtx.fillRect(-p.w/2,-p.h/2,p.w,p.h);fxCtx.restore();}
+  if(parts.length)requestAnimationFrame(fxLoop);
+  else{fxCtx.clearRect(0,0,innerWidth,innerHeight);fxRun=false;}
+}
+function burstCenter(){burst(innerWidth/2,innerHeight*.32,120);}
+function celebrateDay(){const el=document.querySelector('.hero .big');
+  if(el){const r=el.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,120);}else burstCenter();}
+
+/* ===== toasts ===== */
+function toast(msg,icon){
+  const t=document.createElement('div');t.className='toast';
+  t.innerHTML='<i data-lucide="'+(icon||'sparkles')+'"></i><span>'+esc(msg)+'</span>';
+  $('#toasts').appendChild(t);icons();
+  setTimeout(()=>{t.classList.add('out');setTimeout(()=>t.remove(),260);},2600);
+}
+function syncHeader(){
+  $('#gemcount').textContent=state.gems;
+  $('#btnSound').innerHTML='<i data-lucide="'+(state.sound?'volume-2':'volume-x')+'"></i>';
+  icons();
+}
+
+/* ===== render: Today ===== */
+function habitCardToday(h,due){
+  const t=todayISO();const r=(state.log[t]||{})[h.id]||{};const s=r.s||null;
+  let right='',extra='',meta='';
+  if(h.sched){
+    const sc=h.sched[dIdx(t)];
+    extra='<div class="hnote">Today: '+esc(sc.w)+(sc.max!=null?' · max '+sc.max+' hits':'')+'</div>';
+  }
+  if(h.tiers&&h.type==='build'){
+    right='';
+    extra+='<div class="tierrow">'+h.tiers.map((tr,i)=>
+      '<button class="tierpill'+(s==='done'&&r.t===i?' on':'')+'" data-action="tier" data-id="'+h.id+'" data-t="'+i+'"><b>'+esc(tr.l).toUpperCase()+'</b><span>'+esc(tr.v)+'</span></button>').join('')+'</div>';
+  }else{
+    right='<button class="checkbtn'+(s==='done'?' on':'')+'" data-action="check" data-id="'+h.id+'" aria-label="done"><i data-lucide="check"></i></button>';
+  }
+  if(h.unit==='hits'){
+    const sc=h.sched[dIdx(t)];const max=sc.max;const n=r.hits||0;const over=max!=null&&n>max;
+    extra+='<div class="hitsrow'+(over?' over':'')+'">'+
+      '<div class="stepper"><button data-action="hits" data-id="'+h.id+'" data-dir="-1">−</button>'+
+      '<span class="hitsnum">'+n+(max!=null?' / '+max:'')+'</span>'+
+      '<button data-action="hits" data-id="'+h.id+'" data-dir="1">+</button></div>'+
+      '<span class="hitslbl">'+(max!=null?(over?'over the limit':'hits logged today'):'free day — just tracking')+'</span>'+
+      (over&&s!=='fail'?'<button class="linkbtn danger" data-action="fail" data-id="'+h.id+'" style="margin-left:auto">log a slip</button>':'')+
+    '</div>';
+  }
+  if(h.type==='quit'){
+    extra+=(s==='fail')
+      ?'<div class="subrow is-fail"><span><i data-lucide="x"></i>Slip logged today</span><button class="linkbtn" data-action="fail" data-id="'+h.id+'">undo</button></div>'
+      :'<div class="subrow"><span>Slipped today?</span><button class="linkbtn danger" data-action="fail" data-id="'+h.id+'">log a slip</button></div>';
+  }
+  if(h.note)extra+='<div class="hnote" style="margin-top:8px">'+esc(h.note)+'</div>';
+  // meta chips
+  const weekly=!h.sched&&(h.freq||7)<7;
+  if(weekly){const w=weekCount(h),f=h.freq;
+    meta='<span class="wchip'+(w>=f?' ok':'')+'"'+(w>=f?'':'')+'>'+w+'/'+f+' this week</span>';
+    if(due)meta+='<span class="duechip"><i data-lucide="alert-triangle"></i>due today</span>';
+  }else if(!h.sched){
+    // daily streak
+    let d=t,stk=0;
+    if((state.log[t]||{})[h.id]&&state.log[t][h.id].s!=='done')d=addDays(t,-1);
+    for(let i=0;i<4000;i++){if(d<h.created)break;const rr=(state.log[d]||{})[h.id];
+      if(rr&&rr.s==='done'){stk++;d=addDays(d,-1);}else break;}
+    meta='<span class="mini-streak"><i data-lucide="flame"></i>'+stk+'</span>';
+  }
+  return '<div class="hcard card st-'+(s||'none')+(due?'':' nd')+'">'+
+    '<div class="hrow">'+
+      '<div class="hicon"><i data-lucide="'+h.icon+'"></i></div>'+
+      '<div class="hmain"><div class="hname">'+esc(h.name)+'</div>'+
+      '<div class="hmeta"><span class="tchip '+h.type+'"><i data-lucide="'+TYPE[h.type].icon+'"></i>'+TYPE[h.type].label+'</span>'+meta+'</div></div>'+
+      right+
+    '</div>'+extra+'</div>';
+}
+function renderToday(){
+  const t=todayISO();const acts=activeOn(t);
+  const due=acts.filter(h=>isDue(h,t));
+  const notDue=acts.filter(h=>!isDue(h,t));
+  const day=state.log[t]||{};
+  const done=due.filter(h=>(day[h.id]||{}).s==='done').length;
+  const cur=computeStreak();if(cur>state.best)state.best=cur;
+  const complete=due.length>0&&done===due.length;
+  const pct=due.length?Math.round(done/due.length*100):0;
+  let html='<div class="hero card '+(complete?'blazing':'')+'">'+
+    '<div class="flame-wrap '+(cur===0?'dead':'')+'" style="transform:scale('+Math.min(1+cur/90,1.22)+')">'+flameSVG()+'</div>'+
+    '<div class="hero-info"><div class="big">'+cur+'</div>'+
+    '<div class="hero-lbl">'+(cur===0?'your streak starts today':'days of streak')+'</div>'+
+    '<div class="hero-sub">'+
+      '<button class="chipstat c-gold" data-action="streak"><i data-lucide="trophy"></i>best '+state.best+'</button>'+
+      '<button class="chipstat c-ice" data-action="streak"><i data-lucide="shield"></i>shields '+state.shields+'/2</button>'+
+    '</div></div></div>';
+  if(acts.length){
+    const urgent=msToMidnight()<3*3600e3&&!complete;
+    html+='<div class="card prog">'+
+      '<div class="prog-top"><span class="prog-title">Today</span><span class="prog-count">'+done+' of '+due.length+' due habits</span></div>'+
+      '<div class="bar"><div class="fill" style="width:'+pct+'%"></div></div>'+
+      '<div class="countdown'+(urgent?' urgent':'')+'"><i data-lucide="alarm-clock"></i><span id="countdown"></span></div></div>';
+    html+='<div class="stack">'+due.map(h=>habitCardToday(h,true)).join('')+'</div>';
+    if(notDue.length){
+      html+='<div class="archhead">Not due today — bank it anyway</div>'+
+      '<div class="stack">'+notDue.map(h=>habitCardToday(h,false)).join('')+'</div>';
+    }
+  }else{
+    html+='<div class="card empty"><div class="flame-wrap small dead">'+flameSVG(false)+'</div>'+
+    '<h3>Your flame is out</h3><p>Create a habit to light it up.</p>'+
+    '<button class="btn" data-action="new-habit"><i data-lucide="plus"></i>Create a habit</button></div>';
+  }
+  $('#view-today').innerHTML=html;
+}
+
+/* ===== render: Habits ===== */
+function renderHabits(){
+  const acts=state.habits.filter(h=>!h.archived);
+  const arch=state.habits.filter(h=>h.archived);
+  let html='<div class="viewhead"><h2>Habits</h2>'+
+    '<button class="btn small" data-action="new-habit"><i data-lucide="plus"></i>New</button></div>';
+  if(acts.length){
+    html+='<div class="stack">'+acts.map(h=>{
+      const weekly=!h.sched&&(h.freq||7)<7;
+      const info=h.sched?'daily':(weekly?weekCount(h)+'/'+h.freq+' this week':totalDone(h)+' days');
+      return '<div class="hcard card rowbtn" data-action="edit" data-id="'+h.id+'">'+
+        '<div class="hrow"><div class="hicon"><i data-lucide="'+h.icon+'"></i></div>'+
+        '<div class="hmain"><div class="hname">'+esc(h.name)+'</div>'+
+        '<div class="hmeta"><span class="tchip '+h.type+'"><i data-lucide="'+TYPE[h.type].icon+'"></i>'+TYPE[h.type].label+'</span>'+
+        '<span class="dim2">'+info+'</span></div></div>'+
+        '<i data-lucide="chevron-right" class="chev"></i></div>'+
+        (h.note?'<div class="hnote">'+esc(h.note)+'</div>':'')+
+      '</div>';}).join('')+'</div>';
+  }else{
+    html+='<div class="card empty"><h3>No active habits</h3><p>Create one to get going.</p>'+
+    '<button class="btn" data-action="new-habit"><i data-lucide="plus"></i>Create the first</button></div>';
+  }
+  if(arch.length){
+    html+='<div class="archhead">Archived ('+arch.length+')</div><div class="stack">'+arch.map(h=>
+      '<div class="hcard card arch"><div class="hrow"><div class="hicon"><i data-lucide="'+h.icon+'"></i></div>'+
+      '<div class="hmain"><div class="hname">'+esc(h.name)+'</div>'+
+      '<div class="hmeta"><span class="dim2">archived · history kept</span></div></div>'+
+      '<button class="linkbtn" data-action="unarchive" data-id="'+h.id+'">restore</button></div></div>').join('')+'</div>';
+  }
+  $('#view-habits').innerHTML=html;
+}
+
+/* ===== render: History ===== */
+function heatGrid(weeks,cellFn,labels,clickable){
+  const t=todayISO();const dow=dIdx(t);
+  const startMon=addDays(t,-dow-7*(weeks-1));
+  let cells='',lab='',lastM=-1;
+  for(let w=0;w<weeks;w++){
+    for(let r=0;r<7;r++){
+      const d=addDays(startMon,w*7+r);
+      if(d>t){cells+='<span class="hc void"></span>';continue;}
+      cells+='<span class="hc '+cellFn(d)+(d===t?' today':'')+'"'+(clickable?' data-action="cell" data-date="'+d+'"':'')+'></span>';
+    }
+    if(labels){const m=parseISO(addDays(startMon,w*7)).getMonth();
+      if(m!==lastM){lab+='<span class="ml" style="left:'+(w*15)+'px">'+MESES[m]+'</span>';lastM=m;}}
+  }
+  return (labels?'<div class="hmlabels">'+lab+'</div>':'')+
+    '<div class="hm"><div class="hmdays">'+DIAS.map(d=>'<span>'+d+'</span>').join('')+'</div>'+
+    '<div class="hmgrid">'+cells+'</div></div>';
+}
+function gCell(d){
+  if(state.frozen[d])return 'frozen';
+  const st=dayStatus(d);
+  return st==='complete'?'full':st==='fail'?'failc':st==='partial'?'part':'off';
+}
+function hCell(id){return d=>{
+  if(state.frozen[d])return 'frozen';
+  const r=(state.log[d]||{})[id];
+  return r&&r.s==='done'?'full':r&&r.s==='fail'?'failc':'off';};}
+function cellInfo(d){
+  if(state.frozen[d])return fmtDate(d)+' · frozen by shield';
+  const acts=activeOn(d);const due=acts.filter(h=>isDue(h,d));
+  const day=state.log[d]||{};
+  const done=due.filter(h=>(day[h.id]||{}).s==='done').length;
+  const fail=due.filter(h=>(day[h.id]||{}).s==='fail').length;
+  if(due.length===0)return fmtDate(d)+' · nothing due';
+  if(fail)return fmtDate(d)+' · slip ('+done+'/'+due.length+' done)';
+  if(done===due.length)return fmtDate(d)+' · perfect day ('+due.length+' habits)';
+  if(done)return fmtDate(d)+' · partial ('+done+'/'+due.length+' done)';
+  return fmtDate(d)+' · unlogged';
+}
+function statsAll(){
+  const cur=computeStreak();if(cur>state.best){state.best=cur;save();}
+  const t=todayISO(),first=earliest();
+  let total=0,comp30=0,days30=0,d=first,guard=0;
+  while(d<=t&&guard++<4000){
+    const st=dayStatus(d);
+    if(st==='complete')total++;
+    const dd=Math.round((parseISO(t)-parseISO(d))/864e5);
+    if(dd>0&&dd<=30&&st!=='inactive'&&!state.frozen[d]){days30++;if(st==='complete')comp30++;}
+    d=addDays(d,1);
+  }
+  return {cur,total,rate30:days30?Math.round(comp30/days30*100):0};
+}
+const EVICON={complete:['flame','c-fire'],milestone:['trophy','c-gold'],shield:['snowflake','c-ice'],
+broken:['flame','c-red'],buy:['shield','c-ice'],'habit+':['plus','c-fire'],'habit-':['minus',''],
+habitx:['trash-2','c-red'],start:['sparkles','c-gold']};
+function timelineHTML(){
+  if(!state.events.length)return '<p class="dim2" style="font-size:13px;line-height:1.5">No events yet. Perfect days, shields, milestones and broken streaks will show up here.</p>';
+  return state.events.slice(0,30).map(ev=>{
+    const ic=EVICON[ev.type]||['info',''];
+    return '<div class="tle"><span class="ic '+ic[1]+'"><i data-lucide="'+ic[0]+'"></i></span>'+
+    '<div><div class="tx">'+esc(ev.msg)+'</div><div class="dt">'+relDay(ev.date)+'</div></div></div>';}).join('');
+}
+function renderHistory(){
+  const s=statsAll();
+  let html='<div class="viewhead"><h2>History</h2></div>';
+  html+='<div class="statband card">'+
+    '<div class="stat"><div class="sv">'+s.cur+'</div><div class="sl">streak</div></div>'+
+    '<div class="stat"><div class="sv">'+state.best+'</div><div class="sl">best</div></div>'+
+    '<div class="stat"><div class="sv">'+s.total+'</div><div class="sl">perfect days</div></div>'+
+    '<div class="stat"><div class="sv">'+s.rate30+'%</div><div class="sl">30d rate</div></div></div>';
+  html+='<div class="card block"><div class="blocktitle">Last 18 weeks</div>'+heatGrid(18,gCell,true,true)+
+    '<div class="legend">'+
+    '<span class="lg"><i class="sw" style="background:var(--fire)"></i>perfect</span>'+
+    '<span class="lg"><i class="sw" style="background:#7A431F"></i>partial</span>'+
+    '<span class="lg"><i class="sw" style="background:var(--red)"></i>slip</span>'+
+    '<span class="lg"><i class="sw" style="background:var(--ice)"></i>frozen</span>'+
+    '<span class="lg"><i class="sw" style="background:#241E18"></i>miss</span></div></div>';
+  html+='<div class="card block"><div class="blocktitle">Journal</div>'+timelineHTML()+'</div>';
+  $('#view-history').innerHTML=html;
+}
+
+/* ===== master render ===== */
+function render(){
+  syncHeader();
+  if(state.view==='today')renderToday();
+  else if(state.view==='habits')renderHabits();
+  else renderHistory();
+  document.querySelectorAll('.tabbtn').forEach(b=>b.classList.toggle('on',b.dataset.view===state.view));
+  document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id==='view-'+state.view));
+  icons();updateCountdown();
+}
+function msToMidnight(){const n=new Date();return new Date(n.getFullYear(),n.getMonth(),n.getDate()+1)-n;}
+function updateCountdown(){
+  const el=$('#countdown');if(!el)return;
+  const ms=msToMidnight();const h=Math.floor(ms/36e5),m=Math.floor(ms%36e5/6e4);
+  el.textContent=h>0?'The day ends in '+h+' h '+m+' min':'The day ends in '+m+' min';
+}
+
+/* ===== sheets ===== */
+function openSheet(html){
+  $('#sheet').innerHTML=html;
+  $('#sheet').classList.add('open');$('#backdrop').classList.add('open');icons();
+}
+function closeSheet(){
+  $('#sheet').classList.remove('open');$('#backdrop').classList.remove('open');
+}
+function openStreakSheet(){
+  const canBuy=state.gems>=SHIELD_COST&&state.shields<2;
+  let btn='Fully equipped';
+  if(state.shields<2)btn=state.gems>=SHIELD_COST?SHIELD_COST+' gems · buy shield':'Need '+(SHIELD_COST-state.gems)+' more gems';
+  openSheet('<div class="grab"></div><h3 class="sh-title">Your streak</h3>'+
+    '<div class="streak-hero"><div class="flame-wrap small '+(computeStreak()===0?'dead':'')+'">'+flameSVG()+'</div>'+
+    '<div><div class="big2">'+computeStreak()+'</div><div class="dim2">days of streak · best '+state.best+'</div></div></div>'+
+    '<ul class="rules">'+
+    '<li><i data-lucide="flame"></i><span>Log <b>every habit due today</b> before midnight → streak +1. Weekly habits only come due when you fall behind pace.</span></li>'+
+    '<li class="r2"><i data-lucide="snowflake"></i><span>Miss a day with a shield → the streak <b>freezes</b>: no +1, but it doesn\u2019t break.</span></li>'+
+    '<li class="r3"><i data-lucide="x"></i><span>Miss a day <b>without shields</b> → back to zero.</span></li>'+
+    '<li class="r4"><i data-lucide="shield"></i><span>Up to <b>2 shields</b> equipped at once, like Duolingo.</span></li>'+
+    '<li class="r5"><i data-lucide="gem"></i><span>Gems: <b>+5/7/10</b> by goal tier, <b>+10</b> perfect day, <b>+15</b> weekly target, <b>+30</b> every 7-day streak.</span></li></ul>'+
+    '<div class="buyrow"><div class="shieldslots">'+
+    '<span class="slot'+(state.shields>0?' on':'')+'"><i data-lucide="shield"></i></span>'+
+    '<span class="slot'+(state.shields>1?' on':'')+'"><i data-lucide="shield"></i></span></div>'+
+    '<button class="btn'+(canBuy?'':' disabled')+'" data-action="buy-shield"><i data-lucide="gem"></i>'+btn+'</button></div>'+
+    (state.shields<2&&state.gems<SHIELD_COST?'<p class="hint dim2">Log habits and perfect days to earn the missing gems.</p>':''));
+}
+function openInstallSheet(){
+  openSheet('<div class="grab"></div><h3 class="sh-title">Install BRASA</h3>'+
+    (deferredPrompt?'<button class="btn wide" style="margin-bottom:6px" data-action="install-native"><i data-lucide="download"></i>Install the app</button>':'')+
+    '<div class="steps">'+
+    '<div class="step"><div class="step-badge">IPHONE / IPAD</div><ol>'+
+    '<li>Open this page in <b>Safari</b>.</li><li>Tap the <b>Share</b> button.</li><li>Choose <b>Add to Home Screen</b>.</li></ol></div>'+
+    '<div class="step"><div class="step-badge">ANDROID</div><ol>'+
+    '<li>Open this page in <b>Chrome</b>.</li><li>Tap the <b>⋮</b> menu.</li><li>Choose <b>Install app</b> / <b>Add to Home screen</b>.</li></ol></div></div>'+
+    '<p class="hint dim2">It opens full-screen with its own icon. Everything is saved on your phone and works offline.</p>');
+}
+
+/* ===== habit editor ===== */
+let ed=null;
+function openHabitSheet(id){
+  if(id){const h=state.habits.find(x=>x.id===id);
+    ed={id:h.id,name:h.name,type:h.type,icon:h.icon,freq:h.freq||7,
+      t1:h.tiers&&h.tiers[0]?h.tiers[0].v:'',t2:h.tiers&&h.tiers[1]?h.tiers[1].v:'',t3:h.tiers&&h.tiers[2]?h.tiers[2].v:'',
+      note:h.note||'',sched:h.sched,armed:false};
+  }else ed={id:null,name:'',type:'build',icon:'flame',freq:7,t1:'',t2:'',t3:'',note:'',sched:null,armed:false};
+  renderHabitSheet();
+}
+function renderHabitSheet(){
+  const isNew=!ed.id;
+  let html='<div class="grab"></div><h3 class="sh-title">'+(isNew?'New habit':'Edit habit')+'</h3>'+
+    '<input id="h-name" class="input" maxlength="42" placeholder="e.g. Meditate 10 min" value="'+esc(ed.name)+'" autocomplete="off">';
+  if(!ed.sched){
+    html+='<div class="typesel">'+
+      '<button class="topt'+(ed.type==='build'?' sel':'')+'" data-action="set-type" data-t="build"><i data-lucide="sprout"></i><div><b>Build</b><span>log the days you do it</span></div></button>'+
+      '<button class="topt'+(ed.type==='quit'?' sel':'')+'" data-action="set-type" data-t="quit"><i data-lucide="ban"></i><div><b>Cut down</b><span>log slips as they happen</span></div></button></div>';
+  }
+  html+='<div class="iconlabel">Icon</div><div class="icongrid">'+ICONS.map(i=>
+    '<button class="icb'+(ed.icon===i?' sel':'')+'" data-action="set-icon" data-i="'+i+'"><i data-lucide="'+i+'"></i></button>').join('')+'</div>';
+  if(ed.sched){
+    html+='<div class="iconlabel">Fixed schedule</div><div class="schedro">'+
+      DAYNAMES.map((dn,i)=>{const sc=ed.sched[i];if(!sc)return '';
+        return '<div><b>'+dn+'</b><span>'+esc(sc.w)+(sc.max!=null?' · max '+sc.max+' hits':'')+'</span></div>';}).join('')+'</div>';
+  }else{
+    html+='<div class="iconlabel">Days per week</div><div class="freqsel">'+
+      [7,6,5,4,3,2,1].map(f=>'<button class="fbtn'+(ed.freq===f?' sel':'')+'" data-action="set-freq" data-f="'+f+'">'+(f===7?'daily':f+'×')+'</button>').join('')+'</div>';
+    if(ed.type==='build'){
+      html+='<div class="iconlabel">Goal tiers (optional)</div>'+
+        '<div class="trow"><span class="tl">Min</span><input id="t1" class="input" placeholder="e.g. 20 min" value="'+esc(ed.t1)+'"></div>'+
+        '<div class="trow"><span class="tl">Mid</span><input id="t2" class="input" placeholder="e.g. 40 min" value="'+esc(ed.t2)+'"></div>'+
+        '<div class="trow"><span class="tl">Ideal</span><input id="t3" class="input" placeholder="e.g. 60 min" value="'+esc(ed.t3)+'"></div>';
+    }
+  }
+  html+='<input id="h-note" class="input" placeholder="Note (optional)" value="'+esc(ed.note)+'" style="margin-top:14px">'+
+    '<button class="btn wide" data-action="save-habit"><i data-lucide="check"></i>'+(isNew?'Create habit':'Save changes')+'</button>';
+  if(!isNew){
+    html+='<div class="row-actions">'+
+      '<button class="btn ghost" data-action="archive-habit"><i data-lucide="archive"></i>Archive</button>'+
+      '<button class="btn dangerb'+(ed.armed?' armed':'')+'" data-action="del-habit">'+(ed.armed?'Sure? Tap again':'Delete')+'</button></div>'+
+      '<div class="blocktitle2">Last 8 weeks</div>'+heatGrid(8,hCell(ed.id),false,false);
+  }
+  openSheet(html);
+  const inp=$('#h-name');if(inp&&isNew&&window.innerWidth>500)inp.focus();
+}
+
+/* ===== install ===== */
+let deferredPrompt=null;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;});
+(function(){
+  try{
+    function mk(size){
+      const c=document.createElement('canvas');c.width=c.height=size;
+      const x=c.getContext('2d'),r=size*.22,s=size;
+      x.beginPath();x.moveTo(r,0);x.lineTo(s-r,0);x.quadraticCurveTo(s,0,s,r);x.lineTo(s,s-r);
+      x.quadraticCurveTo(s,s,s-r,s);x.lineTo(r,s);x.quadraticCurveTo(0,s,0,s-r);x.lineTo(0,r);
+      x.quadraticCurveTo(0,0,r,0);x.closePath();x.fillStyle='#FF8A3D';x.fill();
+      const po=new Path2D(D_OUT),pi=new Path2D(D_IN);
+      x.save();x.translate(s*.5-35*(s*.0058),s*.52-54*(s*.0058));x.scale(s*.0058,s*.0058);
+      x.fillStyle='#241405';x.fill(po);x.fillStyle='#FFC24B';x.fill(pi);x.restore();
+      return c.toDataURL('image/png');
+    }
+    const i192=mk(192),i180=mk(180),i512=mk(512);
+    const fav=document.createElement('link');fav.rel='icon';fav.href=i192;document.head.appendChild(fav);
+    const ati=document.createElement('link');ati.rel='apple-touch-icon';ati.href=i180;document.head.appendChild(ati);
+    const mf={name:'BRASA',short_name:'BRASA',start_url:'.',display:'standalone',
+      background_color:'#171310',theme_color:'#171310',
+      icons:[{src:i192,sizes:'192x192',type:'image/png'},{src:i512,sizes:'512x512',type:'image/png'}]};
+    const ml=document.createElement('link');ml.rel='manifest';
+    ml.href=URL.createObjectURL(new Blob([JSON.stringify(mf)],{type:'application/json'}));
+    document.head.appendChild(ml);
+  }catch(e){}
+})();
+
+/* ===== events ===== */
+document.addEventListener('input',e=>{
+  if(!ed)return;
+  if(e.target.id==='h-name')ed.name=e.target.value;
+  else if(e.target.id==='t1')ed.t1=e.target.value;
+  else if(e.target.id==='t2')ed.t2=e.target.value;
+  else if(e.target.id==='t3')ed.t3=e.target.value;
+  else if(e.target.id==='h-note')ed.note=e.target.value;
+});
+document.addEventListener('click',e=>{
+  const el=e.target.closest('[data-action]');if(!el)return;
+  const a=el.dataset.action,id=el.dataset.id;
+  switch(a){
+    case 'tab':state.view=el.dataset.view;closeSheet();render();break;
+    case 'check':toggleDone(id);break;
+    case 'fail':toggleFail(id);break;
+    case 'tier':{const r=(state.log[todayISO()]||{})[id];
+      const same=r&&r.s==='done'&&r.t===+el.dataset.t;
+      setMark(id,same?null:'done',+el.dataset.t);break;}
+    case 'hits':{const r=(state.log[todayISO()]||{})[id]||{};
+      setHits(id,(r.hits||0)+(+el.dataset.dir));break;}
+    case 'cell':toast(cellInfo(el.dataset.date),'info');break;
+    case 'streak':openStreakSheet();break;
+    case 'geminfo':toast('Earn gems by logging habits and perfect days','gem');break;
+    case 'close-sheet':closeSheet();break;
+    case 'sound':state.sound=!state.sound;save();syncHeader();
+      toast(state.sound?'Sound on':'Sound muted',state.sound?'volume-2':'volume-x');break;
+    case 'buy-shield':{
+      if(state.gems<SHIELD_COST||state.shields>=2)return;
+      state.gems-=SHIELD_COST;state.shields++;
+      addEvent('buy',todayISO(),'Shield bought and equipped');
+      sndCoin();vib(15);save();syncHeader();
+      toast('Shield equipped ('+state.shields+'/2)','shield');
+      openStreakSheet();break;}
+    case 'install':openInstallSheet();break;
+    case 'install-native':
+      if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;closeSheet();}break;
+    case 'new-habit':openHabitSheet(null);break;
+    case 'edit':openHabitSheet(id);break;
+    case 'set-type':ed.type=el.dataset.t;renderHabitSheet();break;
+    case 'set-icon':ed.icon=el.dataset.i;renderHabitSheet();break;
+    case 'set-freq':ed.freq=+el.dataset.f;renderHabitSheet();break;
+    case 'save-habit':{
+      const name=(ed.name||'').trim();
+      if(!name){toast('Give your habit a name','pencil');return;}
+      if(ed.id){
+        const h=state.habits.find(x=>x.id===ed.id);
+        h.name=name;h.icon=ed.icon;h.note=ed.note;
+        if(!ed.sched){
+          h.type=ed.type;h.freq=ed.freq;
+          if(ed.type==='build'&&(ed.t1||ed.t2||ed.t3)){
+            h.tiers=[{l:'Min',v:ed.t1},{l:'Mid',v:ed.t2},{l:'Ideal',v:ed.t3}].filter(t=>t.v);
+          }else delete h.tiers;
+        }
+        toast('Habit updated','check');
+      }else{
+        const h={id:uid(),name,type:ed.type,icon:ed.icon,created:todayISO(),archivedAt:null,note:ed.note};
+        if(ed.type==='build'){
+          h.freq=ed.freq;
+          if(ed.t1||ed.t2||ed.t3)h.tiers=[{l:'Min',v:ed.t1},{l:'Mid',v:ed.t2},{l:'Ideal',v:ed.t3}].filter(t=>t.v);
+        }else h.freq=7;
+        state.habits.push(h);
+        addEvent('habit+',todayISO(),'Habit created: '+name);
+        toast('Habit created','plus');sndPop();
+      }
+      save();closeSheet();render();break;}
+    case 'archive-habit':{
+      const h=state.habits.find(x=>x.id===ed.id);if(!h)return;
+      h.archivedAt=todayISO();
+      addEvent('habit-',todayISO(),'Habit archived: '+h.name);
+      save();closeSheet();render();
+      toast('Archived · history kept','archive');break;}
+    case 'unarchive':{
+      const h=state.habits.find(x=>x.id===id);if(!h)return;
+      h.archivedAt=null;save();render();toast('Habit restored','undo-2');break;}
+    case 'del-habit':{
+      if(!ed.armed){ed.armed=true;renderHabitSheet();return;}
+      const h=state.habits.find(x=>x.id===ed.id);
+      if(h){for(const d in state.log){delete state.log[d][h.id];}
+        state.habits=state.habits.filter(x=>x.id!==h.id);
+        addEvent('habitx',todayISO(),'Habit deleted: '+h.name);}
+      save();closeSheet();render();toast('Habit deleted','trash-2');break;}
+    case 'finish-onboard':{
+      state.onboarded=true;state.lastSeen=todayISO();
+      addEvent('start',todayISO(),'Flame lit: your first streak begins');
+      save();
+      const ob=$('#onboard');ob.classList.add('out');
+      setTimeout(()=>ob.classList.add('hidden'),600);
+      burstCenter();sndFanfare();render();break;}
+  }
+});
+
+/* ===== clock ===== */
+function tick(){
+  updateCountdown();
+  if(state.lastSeen!==todayISO()){reconcile();render();}
+}
+setInterval(tick,15000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)tick();});
+
+/* ===== boot ===== */
+load();
+reconcile();
+if(!state.onboarded)$('#onboard').classList.remove('hidden');
+render();
+icons();
+</script>
+</body>
+</html>
