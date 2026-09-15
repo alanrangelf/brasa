@@ -9,8 +9,10 @@
 <meta name="apple-mobile-web-app-title" content="BRASA">
 <title>BRASA — habit streaks</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<!-- Pinned version + subresource integrity. Never use @latest here. -->
+<script src="https://unpkg.com/lucide@0.451.0/dist/umd/lucide.min.js" crossorigin="anonymous"></script>
 <style>
 :root{--bg:#171310;--bg2:#100D0B;--card:#1F1A15;--card2:#262019;--line:#33291F;--line2:#45372A;
 --ink:#F3EADD;--dim:#A79A87;--faint:#6E6252;--fire:#FF8A3D;--amber:#FFC24B;--red:#E0564B;--ice:#8FB6CF;--gold:#FFC24B}
@@ -18,6 +20,7 @@
 html,body{height:100%}
 body{background:#0C0A08;font-family:'Outfit',sans-serif;color:var(--ink);font-size:15px;overflow-x:hidden;display:flex;justify-content:center}
 button{font-family:inherit;cursor:pointer}svg{display:block}
+:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
 #app{width:100%;max-width:430px;min-height:100dvh;background:var(--bg);position:relative;display:flex;flex-direction:column}
 @media(min-width:480px){#app{border-left:1px solid #241D16;border-right:1px solid #241D16;box-shadow:0 0 80px rgba(0,0,0,.6)}}
 #topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:8px;padding:14px 16px 12px;
@@ -269,6 +272,7 @@ display:flex;align-items:center;justify-content:center}
 .ob-rules svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--fire)}
 .ob-rules li.r2 svg{color:var(--ice)}.ob-rules li.r3 svg{color:var(--gold)}
 #fx{position:fixed;inset:0;z-index:99;pointer-events:none}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
@@ -301,12 +305,13 @@ display:flex;align-items:center;justify-content:center}
     <p class="tagline">Build the good habits, cut the bad ones —<br>and keep the flame alive.</p>
     <ul class="ob-rules">
       <li><i data-lucide="flame"></i><span>Log everything <b>due today</b> before midnight and your streak grows +1. Weekly habits only come due when you fall behind pace.</span></li>
-      <li class="r2"><i data-lucide="snowflake"></i><span>Miss a day with a <b>shield</b> and the streak freezes instead of breaking. Max <b>2 shields</b>, like Duolingo.</span></li>
+      <li class="r2"><i data-lucide="snowflake"></i><span>Miss a day with a <b>shield</b> and the streak freezes instead of breaking. Max <b>2 shields</b>.</span></li>
       <li class="r3"><i data-lucide="gem"></i><span>Earn <b>gems</b> for logging habits, perfect days and weekly targets — spend them on shields.</span></li>
     </ul>
     <button class="btn" style="padding:15px 30px" data-action="finish-onboard"><i data-lucide="flame"></i>Light the flame</button>
   </div>
 </div>
+
 <script>
 /* ===== utils ===== */
 const $=s=>document.querySelector(s);
@@ -331,15 +336,15 @@ const weekStart=d=>addDays(d,-dIdx(d));
 const D_OUT='M35 2 C37 15 43 23 50 31 C58 41 62 48 62 60 C62 77 50 90 35 90 C20 90 8 77 8 60 C8 47 13 38 19 31 C21 38 25 42 29 43 C28 30 32 15 35 2 Z';
 const D_IN='M35 34 C36 42 41 46 45 51 C49 56 51 60 51 66 C51 76 44 83 35 83 C26 83 19 76 19 66 C19 59 22 54 26 50 C27 55 30 58 33 58 C31 50 33 42 35 34 Z';
 const D_CORE='M35 50 C36 55 40 58 42 62 C44 65 45 67 45 70 C45 76 41 80 35 80 C29 80 25 76 25 70 C25 66 27 63 29 60 C30 63 32 65 34 64 C32 58 33 54 35 50 Z';
-function flameSVG(g=true){return (g?'<span class="flame-glow"></span>':'')+
-'<svg class="flame" viewBox="0 0 70 108"><path class="flame-outer" d="'+D_OUT+'" fill="#FF8A3D"/>'+
+function flameSVG(g){if(g===undefined)g=true;return (g?'<span class="flame-glow"></span>':'')+
+'<svg class="flame" viewBox="0 0 70 108" aria-hidden="true"><path class="flame-outer" d="'+D_OUT+'" fill="#FF8A3D"/>'+
 '<path class="flame-inner" d="'+D_IN+'" fill="#FFC24B"/>'+
 '<path class="flame-core" d="'+D_CORE+'" fill="#FFEFC9"/></svg>'+
 '<span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span><span class="spark s4"></span><span class="spark s5"></span>';}
- $('#brandflame').innerHTML='<svg viewBox="0 0 70 108" width="20" height="30"><path d="'+D_OUT+'" fill="#FF8A3D"/><path d="'+D_IN+'" fill="#FFC24B"/></svg>';
- $('#onboardflame').innerHTML='<div class="flame-wrap big-on">'+flameSVG()+'</div>';
+$('#brandflame').innerHTML='<svg viewBox="0 0 70 108" width="20" height="30" aria-hidden="true"><path d="'+D_OUT+'" fill="#FF8A3D"/><path d="'+D_IN+'" fill="#FFC24B"/></svg>';
+$('#onboardflame').innerHTML='<div class="flame-wrap big-on">'+flameSVG()+'</div>';
 
-/* ===== seed habits (your rules) ===== */
+/* ===== seed habits ===== */
 function seedHabits(){
   const t=todayISO();
   const weedSched={0:{w:'5–11 PM',max:4},1:{w:'5–11 PM',max:4},2:{w:'5–11 PM',max:4},3:{w:'5–11 PM',max:4},
@@ -509,9 +514,9 @@ function tone(f,d,type,v,slide,delay){
 const sndPop=()=>tone(560,.09,'triangle',.14,880);
 const sndClick=()=>tone(300,.05,'triangle',.07);
 const sndFail=()=>tone(210,.22,'sawtooth',.06,120);
-const sndCoin=()=>{tone(1046,.07,'square',.045);tone(1568,.12,'square',.035,.07);};
-const sndFanfare=()=>{tone(523,.12);tone(659,.12,'triangle',.12,.11);tone(784,.24,'triangle',.12,.22);};
-const sndMilestone=()=>{tone(659,.1);tone(880,.1,'triangle',.1,.1);tone(1175,.26,'triangle',.1,.2);};
+const sndCoin=()=>{tone(1046,.07,'square',.045);tone(1568,.12,'square',.035,null,.07);};
+const sndFanfare=()=>{tone(523,.12);tone(659,.12,'triangle',.12,null,.11);tone(784,.24,'triangle',.12,null,.22);};
+const sndMilestone=()=>{tone(659,.1);tone(880,.1,'triangle',.1,null,.1);tone(1175,.26,'triangle',.1,null,.2);};
 
 /* ===== confetti ===== */
 const fxCv=$('#fx'),fxCtx=fxCv.getContext('2d');
@@ -573,9 +578,9 @@ function habitCardToday(h,due){
   if(h.unit==='hits'){
     const sc=h.sched[dIdx(t)];const max=sc.max;const n=r.hits||0;const over=max!=null&&n>max;
     extra+='<div class="hitsrow'+(over?' over':'')+'">'+
-      '<div class="stepper"><button data-action="hits" data-id="'+h.id+'" data-dir="-1">−</button>'+
+      '<div class="stepper"><button data-action="hits" data-id="'+h.id+'" data-dir="-1" aria-label="minus">−</button>'+
       '<span class="hitsnum">'+n+(max!=null?' / '+max:'')+'</span>'+
-      '<button data-action="hits" data-id="'+h.id+'" data-dir="1">+</button></div>'+
+      '<button data-action="hits" data-id="'+h.id+'" data-dir="1" aria-label="plus">+</button></div>'+
       '<span class="hitslbl">'+(max!=null?(over?'over the limit':'hits logged today'):'free day — just tracking')+'</span>'+
       (over&&s!=='fail'?'<button class="linkbtn danger" data-action="fail" data-id="'+h.id+'" style="margin-left:auto">log a slip</button>':'')+
     '</div>';
@@ -586,13 +591,11 @@ function habitCardToday(h,due){
       :'<div class="subrow"><span>Slipped today?</span><button class="linkbtn danger" data-action="fail" data-id="'+h.id+'">log a slip</button></div>';
   }
   if(h.note)extra+='<div class="hnote" style="margin-top:8px">'+esc(h.note)+'</div>';
-  // meta chips
   const weekly=!h.sched&&(h.freq||7)<7;
   if(weekly){const w=weekCount(h),f=h.freq;
-    meta='<span class="wchip'+(w>=f?' ok':'')+'"'+(w>=f?'':'')+'>'+w+'/'+f+' this week</span>';
+    meta='<span class="wchip'+(w>=f?' ok':'')+'">'+w+'/'+f+' this week</span>';
     if(due)meta+='<span class="duechip"><i data-lucide="alert-triangle"></i>due today</span>';
   }else if(!h.sched){
-    // daily streak
     let d=t,stk=0;
     if((state.log[t]||{})[h.id]&&state.log[t][h.id].s!=='done')d=addDays(t,-1);
     for(let i=0;i<4000;i++){if(d<h.created)break;const rr=(state.log[d]||{})[h.id];
@@ -645,8 +648,8 @@ function renderToday(){
 
 /* ===== render: Habits ===== */
 function renderHabits(){
-  const acts=state.habits.filter(h=>!h.archived);
-  const arch=state.habits.filter(h=>h.archived);
+  const acts=state.habits.filter(h=>!h.archivedAt);
+  const arch=state.habits.filter(h=>h.archivedAt);
   let html='<div class="viewhead"><h2>Habits</h2>'+
     '<button class="btn small" data-action="new-habit"><i data-lucide="plus"></i>New</button></div>';
   if(acts.length){
@@ -792,7 +795,7 @@ function openStreakSheet(){
     '<li><i data-lucide="flame"></i><span>Log <b>every habit due today</b> before midnight → streak +1. Weekly habits only come due when you fall behind pace.</span></li>'+
     '<li class="r2"><i data-lucide="snowflake"></i><span>Miss a day with a shield → the streak <b>freezes</b>: no +1, but it doesn\u2019t break.</span></li>'+
     '<li class="r3"><i data-lucide="x"></i><span>Miss a day <b>without shields</b> → back to zero.</span></li>'+
-    '<li class="r4"><i data-lucide="shield"></i><span>Up to <b>2 shields</b> equipped at once, like Duolingo.</span></li>'+
+    '<li class="r4"><i data-lucide="shield"></i><span>Up to <b>2 shields</b> equipped at once.</span></li>'+
     '<li class="r5"><i data-lucide="gem"></i><span>Gems: <b>+5/7/10</b> by goal tier, <b>+10</b> perfect day, <b>+15</b> weekly target, <b>+30</b> every 7-day streak.</span></li></ul>'+
     '<div class="buyrow"><div class="shieldslots">'+
     '<span class="slot'+(state.shields>0?' on':'')+'"><i data-lucide="shield"></i></span>'+
@@ -831,7 +834,7 @@ function renderHabitSheet(){
       '<button class="topt'+(ed.type==='quit'?' sel':'')+'" data-action="set-type" data-t="quit"><i data-lucide="ban"></i><div><b>Cut down</b><span>log slips as they happen</span></div></button></div>';
   }
   html+='<div class="iconlabel">Icon</div><div class="icongrid">'+ICONS.map(i=>
-    '<button class="icb'+(ed.icon===i?' sel':'')+'" data-action="set-icon" data-i="'+i+'"><i data-lucide="'+i+'"></i></button>').join('')+'</div>';
+    '<button class="icb'+(ed.icon===i?' sel':'')+'" data-action="set-icon" data-i="'+i+'" aria-label="'+i+'"><i data-lucide="'+i+'"></i></button>').join('')+'</div>';
   if(ed.sched){
     html+='<div class="iconlabel">Fixed schedule</div><div class="schedro">'+
       DAYNAMES.map((dn,i)=>{const sc=ed.sched[i];if(!sc)return '';
@@ -858,7 +861,7 @@ function renderHabitSheet(){
   const inp=$('#h-name');if(inp&&isNew&&window.innerWidth>500)inp.focus();
 }
 
-/* ===== install ===== */
+/* ===== install (PWA icons + manifest generated locally) ===== */
 let deferredPrompt=null;
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;});
 (function(){
